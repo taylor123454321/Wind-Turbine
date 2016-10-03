@@ -1,0 +1,28 @@
+Removed Pin From Net: NetName=LED5 Pin=Wifi I/O-4
+Removed Pin From Net: NetName=NetU1_25 Pin=Wifi I/O-5
+Removed Pin From Net: NetName=NetTPTX_1 Pin=Wifi I/O-7
+Removed Pin From Net: NetName=NetTPRX_1 Pin=Wifi I/O-10
+Removed Pin From Net: NetName=NetU1_52 Pin=Wifi I/O-14
+Removed Pin From Net: NetName=NetU1_23 Pin=Wifi I/O-16
+Removed Pin From Net: NetName=LED4 Pin=Wifi I/O-20
+Removed Pin From Net: NetName=LED6 Pin=Wifi I/O-34
+Removed Pin From Net: NetName=NetU1_38 Pin=Wifi I/O-36
+Removed Pin From Net: NetName=NetU1_42 Pin=Wifi I/O-38
+Removed Member From Class: ClassName=Sam4S wifi extension3 Member=Wifi Power Connections
+Change Component Designator: OldDesignator=Wifi Power Connections NewDesignator=Wifi I/O
+Added Pin To Net: NetName=LED5 Pin=Wifi I/O-4
+Added Pin To Net: NetName=NetU1_25 Pin=Wifi I/O-5
+Added Pin To Net: NetName=NetTPTX_1 Pin=Wifi I/O-7
+Added Pin To Net: NetName=NetTPRX_1 Pin=Wifi I/O-10
+Added Pin To Net: NetName=NetTPRX_1 Pin=Wifi I/O-10
+Added Pin To Net: NetName=NetTPRX_1 Pin=Wifi I/O-10
+Added Pin To Net: NetName=NetTPRX_1 Pin=Wifi I/O-10
+Added Pin To Net: NetName=NetTPRX_1 Pin=Wifi I/O-10
+Added Pin To Net: NetName=NetU1_52 Pin=Wifi I/O-14
+Added Pin To Net: NetName=NetU1_23 Pin=Wifi I/O-16
+Added Pin To Net: NetName=LED4 Pin=Wifi I/O-20
+Added Pin To Net: NetName=LED6 Pin=Wifi I/O-34
+Added Pin To Net: NetName=NetU1_38 Pin=Wifi I/O-36
+Added Pin To Net: NetName=NetU1_42 Pin=Wifi I/O-38
+Added Member To Class: ClassName=Wifi I/O_Nets Member=Wire GND
+Added Member To Class: ClassName=Wifi I/O_Nets Member=Wire NetC18_1

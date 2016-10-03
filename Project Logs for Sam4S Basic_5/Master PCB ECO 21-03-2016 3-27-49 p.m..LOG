@@ -1,0 +1,12 @@
+Added Pin To Net: NetName=+5V Pin=U2-1
+Added Pin To Net: NetName=GND Pin=U2-2
+Added Pin To Net: NetName=GND Pin=U2-4
+Added Member To Class: ClassName=Sam4S Basic Board 5 Member=Component TP3USB_N USB_N
+Added Member To Class: ClassName=Sam4S Basic Board 5 Member=Component TP5USB_P USB_P
+Added Member To Class: ClassName=Sam4S Basic Board 5 Member=Component TP_erase Erase
+Added Member To Class: ClassName=Sam4S Power Distribution_5 Member=Component TP_GND_ Gnd
+Added Member To Class: ClassName=Sam4S Basic Board 5 Member=Component TP_pin_11 PA11
+Added Member To Class: ClassName=Sam4S Basic Board 5 Member=Component TP_pin_PA15 PA15
+Added Member To Class: ClassName=Sam4S Power Distribution_5 Member=Component TP_power_3.3__ 3V3
+Added Member To Class: ClassName=Sam4S Basic Board 5 Member=Component TP_power_3.3_ 3V3
+Added Member To Class: ClassName=Sam4S Power Distribution_5 Member=Component TP_VddOut VddOut

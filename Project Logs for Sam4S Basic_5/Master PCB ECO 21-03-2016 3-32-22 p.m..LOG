@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=+5V Pin=U2-1
+Removed Pin From Net: NetName=GND Pin=U2-2
+Removed Pin From Net: NetName=NetR20_1 Pin=U2-3
+Removed Pin From Net: NetName=GND Pin=U2-4
+Removed Pin From Net: NetName=NetC18_1 Pin=U2-5
+Removed Member From Class: ClassName=Sam4S wifi extension3 Member=U2
+Removed Member From Class: ClassName=U2_Nets Member=+3V3
+Added Component: Designator=U3(SOT95P280X145-5N)
+Added Pin To Net: NetName=+5V Pin=U3-1
+Added Pin To Net: NetName=GND Pin=U3-2
+Added Pin To Net: NetName=NetR20_1 Pin=U3-3
+Added Pin To Net: NetName=GND Pin=U3-4
+Added Pin To Net: NetName=NetC18_1 Pin=U3-5
+Change Class Name : Old Net Name=U2_Nets New Net Name=U3_Nets
+Added Class: Name=U2_Nets
+Added Member To Class: ClassName=Sam4S wifi extension3 Member=Component U3 TLV70233DBVR
