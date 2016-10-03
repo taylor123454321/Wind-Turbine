@@ -1,0 +1,11 @@
+Change Component DesignItemId : Designator=D2 Old DesignItemId=Diode(GP2D) New DesignItemId=DS_SS14E3
+Change Component Footprint: Designator=D2 Old Footprint=PCBComponent_1 - duplicate New Footprint=DIOM4227X23N
+Change Component Comment : Designator=D2 Old Comment=Diode(GP2D) New Comment=SS14-E3/5AT
+Added Component: Designator=D3(PCBComponent_1 - duplicate)
+Added Pin To Net: NetName=NetC17_2 Pin=D2-2
+Added Member To Class: ClassName=Sam4S Basic Board 5 Member=Component D2 SS14-E3/5AT
+Added Member To Class: ClassName=Sam4S Buck board Member=Component D3 Diode(GP2D)
+Added Member To Class: ClassName=Sam4S Basic Board 5 Member=Component U1 ATSAM4S8BA-ANR
+Added Room: Name=Sam4S Basic Board 5
+Added Room: Name=Sam4S Buck board
+Added Room: Name=Sam4S Power Distribution_5

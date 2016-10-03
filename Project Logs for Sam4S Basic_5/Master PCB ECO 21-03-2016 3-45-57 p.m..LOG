@@ -1,0 +1,23 @@
+Removed Member From Class: ClassName=U1_Nets Member=NetU1_23
+Removed Member From Class: ClassName=Wifi I/O_Nets Member=NetU1_23
+Removed Member From Class: ClassName=U1_Nets Member=NetU1_25
+Removed Member From Class: ClassName=Wifi I/O_Nets Member=NetU1_25
+Added Component: Designator=TPCT(TP_0805)
+Added Component: Designator=TPRT(TP_0805)
+Added Pin To Net: NetName=NetTPCT_1 Pin=TPCT-1
+Added Pin To Net: NetName=NetTPCT_1 Pin=U1-25
+Added Pin To Net: NetName=NetTPCT_1 Pin=Wifi I/O-5
+Added Net: Name=NetTPCT_1
+Added Pin To Net: NetName=NetTPRT_1 Pin=TPRT-1
+Added Pin To Net: NetName=NetTPRT_1 Pin=U1-23
+Added Pin To Net: NetName=NetTPRT_1 Pin=Wifi I/O-16
+Added Net: Name=NetTPRT_1
+Added Class: Name=TPCT_Nets
+Added Class: Name=TPRT_Nets
+Added Member To Class: ClassName=Sam4S wifi extension3 Member=Component TPCT Erase
+Added Member To Class: ClassName=Sam4S wifi extension3 Member=Component TPRT Erase
+Added Member To Class: ClassName=Sam4S Power Distribution_5 Member=Component U2 TLV70233DBVR
+Added Member To Class: ClassName=U1_Nets Member=Wire NetTPCT_1
+Added Member To Class: ClassName=Wifi I/O_Nets Member=Wire NetTPCT_1
+Added Member To Class: ClassName=U1_Nets Member=Wire NetTPRT_1
+Added Member To Class: ClassName=Wifi I/O_Nets Member=Wire NetTPRT_1

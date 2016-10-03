@@ -1,0 +1,5 @@
+Added Pin To Net: NetName=+5V Pin=Q1-2
+Added Member To Class: ClassName=Sam4S Basic Board 5 Member=Component D2 SS14-E3/5AT
+Added Room: Name=Sam4S Basic Board 5
+Added Room: Name=Sam4S Buck board
+Added Room: Name=Sam4S Power Distribution_5

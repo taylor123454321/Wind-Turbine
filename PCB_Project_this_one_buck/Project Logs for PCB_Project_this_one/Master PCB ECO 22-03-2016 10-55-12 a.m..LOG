@@ -1,0 +1,6 @@
+Added Component: Designator=TP_power_adiode(TP_0805)
+Added Component: Designator=TP_power_VBUS(TP_0805)
+Added Pin To Net: NetName=NetC4_1 Pin=TP_power_adiode-1
+Added Pin To Net: NetName=NetD1_2 Pin=TP_power_VBUS-1
+Added Member To Class: ClassName=Sam4S Power Distribution_5 Member=Component TP_power_adiode 3V3
+Added Member To Class: ClassName=Sam4S Power Distribution_5 Member=Component TP_power_VBUS 3V3

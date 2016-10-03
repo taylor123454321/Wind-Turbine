@@ -1,0 +1,74 @@
+Removed Pin From Net: NetName=+5V Pin=D2-1
+Removed Pin From Net: NetName=NetC17_2 Pin=D2-2
+Removed Pin From Net: NetName=NetC19_2 Pin=D3-1
+Removed Pin From Net: NetName=NetC19_1 Pin=D3-2
+Removed Pin From Net: NetName=NetU1_3 Pin=U1-3
+Removed Pin From Net: NetName=NetU1_4 Pin=U1-4
+Removed Pin From Net: NetName=NetU1_5 Pin=U1-5
+Removed Pin From Net: NetName=NetU1_6 Pin=U1-6
+Removed Pin From Net: NetName=NetU1_9 Pin=U1-9
+Removed Pin From Net: NetName=NetU1_10 Pin=U1-10
+Removed Pin From Net: NetName=NetU1_11 Pin=U1-11
+Removed Pin From Net: NetName=NetU1_13 Pin=U1-13
+Removed Pin From Net: NetName=NetU1_14 Pin=U1-14
+Removed Pin From Net: NetName=NetU1_15 Pin=U1-15
+Removed Pin From Net: NetName=NetU1_16 Pin=U1-16
+Removed Pin From Net: NetName=NetU1_19 Pin=U1-19
+Removed Pin From Net: NetName=NetU1_20 Pin=U1-20
+Removed Pin From Net: NetName=NetU1_23 Pin=U1-23
+Removed Pin From Net: NetName=NetU1_25 Pin=U1-25
+Removed Pin From Net: NetName=NetR3_1 Pin=U1-26
+Removed Pin From Net: NetName=NetTP_pin_PA11_1 Pin=U1-28
+Removed Pin From Net: NetName=NetR7_2 Pin=U1-31
+Removed Pin From Net: NetName=TDI Pin=U1-33
+Removed Pin From Net: NetName=USB DETECT Pin=U1-35
+Removed Pin From Net: NetName=SCL Pin=U1-36
+Removed Pin From Net: NetName=NetU1_37 Pin=U1-37
+Removed Pin From Net: NetName=NetU1_38 Pin=U1-38
+Removed Pin From Net: NetName=NRST Pin=U1-39
+Removed Pin From Net: NetName=GND Pin=U1-40
+Removed Pin From Net: NetName=NetU1_41 Pin=U1-41
+Removed Pin From Net: NetName=NetU1_42 Pin=U1-42
+Removed Pin From Net: NetName=SDA Pin=U1-43
+Removed Pin From Net: NetName=LED3 Pin=U1-44
+Removed Pin From Net: NetName=LED2 Pin=U1-47
+Removed Pin From Net: NetName=LED1 Pin=U1-48
+Removed Pin From Net: NetName=TDO Pin=U1-49
+Removed Pin From Net: NetName=GND Pin=U1-50
+Removed Pin From Net: NetName=TMS Pin=U1-51
+Removed Pin From Net: NetName=NetQ1_1 Pin=U1-52
+Removed Pin From Net: NetName=TCK Pin=U1-53
+Removed Pin From Net: NetName=ERASE Pin=U1-55
+Removed Pin From Net: NetName=NetR6_2 Pin=U1-56
+Removed Pin From Net: NetName=NetR5_2 Pin=U1-57
+Removed Pin From Net: NetName=NetC2_2 Pin=U1-61
+Removed Pin From Net: NetName=NetC1_2 Pin=U1-62
+Removed Member From Class: ClassName=Sam4S Buck board Member=*
+Removed Member From Class: ClassName=Sam4S Buck board Member=D3
+Change Component DesignItemId : Designator=D2 Old DesignItemId=DS_SS14E3 New DesignItemId=Diode(GP2D)
+Change Component DesignItemId : Designator=U1 Old DesignItemId=SE_ATSAM4S16BA-MU New DesignItemId=STP140NF75
+Change Component DesignItemId : Designator=U1 Old DesignItemId=STP140NF75 New DesignItemId=SE_ATSAM4S16BA-MU
+Change Component Footprint: Designator=D2 Old Footprint=DIOM4227X23N New Footprint=PCBComponent_1 - duplicate
+Change Component Footprint: Designator=U1 Old Footprint=LQFP64_L New Footprint=TO-220
+Change Component Footprint: Designator=U1 Old Footprint=TO-220 New Footprint=LQFP64_L
+Change Component Comment : Designator=U1 Old Comment=ATSAM4S8BA-ANR New Comment=STP140NF75
+Change Component Comment : Designator=D2 Old Comment=SS14-E3/5AT New Comment=Diode(GP2D)
+Change Component Comment : Designator=U1 Old Comment=STP140NF75 New Comment=ATSAM4S8BA-ANR
+Added Component: Designator=D2(DIOM4227X23N)
+Added Pin To Net: NetName=+5V Pin=D2-1
+Added Pin To Net: NetName=NetC17_2 Pin=D2-2
+Added Pin To Net: NetName=NetC19_1 Pin=U1-3
+Added Pin To Net: NetName=NetU1_3 Pin=U1-3
+Added Pin To Net: NetName=+3V3 Pin=U1-7
+Added Pin To Net: NetName=VDDOUT Pin=U1-8
+Added Pin To Net: NetName=VDDOUT Pin=U1-12
+Added Pin To Net: NetName=GND Pin=U1-17
+Added Pin To Net: NetName=+3V3 Pin=U1-18
+Added Pin To Net: NetName=VDDOUT Pin=U1-24
+Added Pin To Net: NetName=+3V3 Pin=U1-45
+Added Pin To Net: NetName=GND Pin=U1-46
+Added Pin To Net: NetName=VDDOUT Pin=U1-54
+Added Pin To Net: NetName=+3V3 Pin=U1-58
+Added Pin To Net: NetName=GND Pin=U1-60
+Added Pin To Net: NetName=NetC15_2 Pin=U1-64
+Added Member To Class: ClassName=Sam4S Buck board Member=Component d2 Diode(GP2D)

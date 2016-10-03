@@ -1,0 +1,34 @@
+Removed Pin From Net: NetName=GND Pin=C18-2
+Removed Pin From Net: NetName=GND Pin=C20-1
+Removed Pin From Net: NetName=GND Pin=C21-1
+Removed Pin From Net: NetName=GND Pin=C22-1
+Removed Pin From Net: NetName=+5V Pin=C23-1
+Removed Pin From Net: NetName=GND Pin=C23-2
+Removed Pin From Net: NetName=GND Pin=R20-2
+Removed Pin From Net: NetName=+5V Pin=TP_power_5-1
+Removed Pin From Net: NetName=+5V Pin=U3-1
+Removed Pin From Net: NetName=GND Pin=U3-2
+Removed Pin From Net: NetName=GND Pin=U3-4
+Removed Pin From Net: NetName=GND Pin=Wifi I/O-1
+Removed Pin From Net: NetName=GND Pin=Wifi I/O-2
+Removed Pin From Net: NetName=GND Pin=Wifi I/O-9
+Removed Pin From Net: NetName=NetU1_52 Pin=Wifi I/O-14
+Removed Pin From Net: NetName=GND Pin=Wifi I/O-15
+Removed Pin From Net: NetName=GND Pin=Wifi I/O-21
+Removed Pin From Net: NetName=NetU1_38 Pin=Wifi I/O-36
+Removed Pin From Net: NetName=GND Pin=Wifi I/O-37
+Removed Pin From Net: NetName=NetU1_42 Pin=Wifi I/O-38
+Removed Pin From Net: NetName=GND Pin=Wifi I/O-39
+Removed Pin From Net: NetName=GND Pin=Wifi I/O-40
+Added Pin To Net: NetName=NetU1_11 Pin=U1-11
+Added Net: Name=NetU1_11
+Added Pin To Net: NetName=NetU1_14 Pin=U1-14
+Added Net: Name=NetU1_14
+Added Pin To Net: NetName=NetU1_23 Pin=U1-23
+Added Net: Name=NetU1_23
+Added Pin To Net: NetName=NetU1_25 Pin=U1-25
+Added Net: Name=NetU1_25
+Added Pin To Net: NetName=NetU1_41 Pin=U1-41
+Added Net: Name=NetU1_41
+Added Room: Name=Sam4S Basic Board 5
+Added Room: Name=Sam4S Power Distribution_5

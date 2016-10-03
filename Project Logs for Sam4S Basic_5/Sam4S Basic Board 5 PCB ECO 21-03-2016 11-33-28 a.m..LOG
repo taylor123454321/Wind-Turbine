@@ -1,0 +1,207 @@
+Removed Pin From Net: NetName=VBUS Pin=L1-1
+Removed Pin From Net: NetName=VBUS Pin=TP12-1
+Removed Pin From Net: NetName=+5V Pin=U2-3
+Removed Pin From Net: NetName=+3V3 Pin=U2-5
+Removed Pin From Net: NetName=NetC2_2 Pin=Y1-1
+Removed Pin From Net: NetName=NetC1_2 Pin=Y1-3
+Removed Member From Class: ClassName=Sam4S Basic Board 5 Member=Y1
+Removed Member From Class: ClassName=U1_Nets Member=NetTP4_1
+Removed Member From Class: ClassName=U1_Nets Member=NetTP6_1
+Change Component Designator: OldDesignator=TP1 NewDesignator=TP_power_3.3_
+Change Component Designator: OldDesignator=TP2 NewDesignator=TP_erase
+Change Component Designator: OldDesignator=TP3 NewDesignator=TP3USB_N
+Change Component Designator: OldDesignator=TP4 NewDesignator=TP_pin_PA15
+Change Component Designator: OldDesignator=TP5 NewDesignator=TP5USB_P
+Change Component Designator: OldDesignator=TP6 NewDesignator=TP_pin_11
+Change Component Designator: OldDesignator=TP12 NewDesignator=TP_VBUS
+Change Component Designator: OldDesignator=TP13 NewDesignator=TP_power_3.3__
+Change Component Designator: OldDesignator=TP14 NewDesignator=TP_VddOut
+Change Component Designator: OldDesignator=TP15 NewDesignator=TP_GND_
+Change Component Library : Designator=C1 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=C2 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=C3 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=C4 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=C5 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=C6 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=C7 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=C8 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=C9 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=C10 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=C11 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=C12 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=C13 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=C14 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=C15 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=C16 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=C17 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=DL1 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=DL2 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=DL3 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=H1 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=H2 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=H3 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=L1 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=L2 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=MT1 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=MT2 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=MT3 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=MT4 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=R1 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=R2 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=R3 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=R4 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=R5 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=R6 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=R7 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=R8 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=R9 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=R10 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=R11 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=R12 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=R13 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=R14 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=R15 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=R16 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=SW1 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=SW2 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=TP_power_3.3_ Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=TP_erase Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=TP3USB_N Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=TP_pin_PA15 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=TP5USB_P Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=TP_pin_11 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=TP7 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=TP8 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=TP9 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=TP10 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=TP11 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=TP_VBUS Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=TP_power_3.3__ Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=TP_VddOut Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=TP_GND_ Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=TP16 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=U1 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Change Component Library : Designator=U2 Old Library=ECE Components_15_7.IntLib New Library=ECE Components_15_8.IntLib
+Added Component: Designator=C18(CAPC1608L)
+Added Component: Designator=C20(CAPC1608L)
+Added Component: Designator=C21(CAPC1608L)
+Added Component: Designator=C22(CAPC1608L)
+Added Component: Designator=C23(CAPC1608L)
+Added Component: Designator=Clock(HC49/4h_SMX)
+Added Component: Designator=DL5(WL-SMTW3528)
+Added Component: Designator=DL6(WL-SMCW0603)
+Added Component: Designator=DL7(WL-SMTW3528)
+Added Component: Designator=R17(RESC1608L)
+Added Component: Designator=R18(RESC1608L)
+Added Component: Designator=R19(RESC1608L)
+Added Component: Designator=R20(RESC1608L)
+Added Component: Designator=TP_power_3.3(TP_0805)
+Added Component: Designator=TP_power_5(TP_0805)
+Added Component: Designator=TPRX(TP_0805)
+Added Component: Designator=TPTX(TP_0805)
+Added Pin To Net: NetName=GND Pin=C18-2
+Added Pin To Net: NetName=GND Pin=C20-1
+Added Pin To Net: NetName=GND Pin=C21-1
+Added Pin To Net: NetName=GND Pin=C22-1
+Added Pin To Net: NetName=+5V Pin=C23-1
+Added Pin To Net: NetName=GND Pin=C23-2
+Added Pin To Net: NetName=NetC2_2 Pin=Clock-1
+Added Pin To Net: NetName=NetC1_2 Pin=Clock-2
+Added Pin To Net: NetName=+3V3 Pin=DL5-2
+Added Pin To Net: NetName=+3V3 Pin=DL6-2
+Added Pin To Net: NetName=+3V3 Pin=DL7-2
+Added Pin To Net: NetName=GND Pin=R20-2
+Added Pin To Net: NetName=+5V Pin=TP_power_5-1
+Added Pin To Net: NetName=+5V Pin=U2-1
+Added Pin To Net: NetName=GND Pin=U2-2
+Added Pin To Net: NetName=+5V Pin=U2-3
+Added Pin To Net: NetName=GND Pin=U2-4
+Added Pin To Net: NetName=+3V3 Pin=U2-5
+Change Net Name : Old Net Name=NetTP4_1 New Net Name=NetTP_pin_PA15_1
+Change Net Name : Old Net Name=NetTP6_1 New Net Name=NetTP_pin_11_1
+Added Pin To Net: NetName=LED4 Pin=R19-1
+Added Net: Name=LED4
+Added Pin To Net: NetName=LED5 Pin=R17-1
+Added Net: Name=LED5
+Added Pin To Net: NetName=LED6 Pin=R18-1
+Added Net: Name=LED6
+Added Pin To Net: NetName=NetC18_1 Pin=C18-1
+Added Pin To Net: NetName=NetC18_1 Pin=C20-2
+Added Pin To Net: NetName=NetC18_1 Pin=C21-2
+Added Pin To Net: NetName=NetC18_1 Pin=C22-2
+Added Pin To Net: NetName=NetC18_1 Pin=TP_power_3.3-1
+Added Pin To Net: NetName=NetC18_1 Pin=U2-5
+Added Net: Name=NetC18_1
+Added Pin To Net: NetName=NetDL5_1 Pin=DL5-1
+Added Pin To Net: NetName=NetDL5_1 Pin=R19-2
+Added Net: Name=NetDL5_1
+Added Pin To Net: NetName=NetDL6_1 Pin=DL6-1
+Added Pin To Net: NetName=NetDL6_1 Pin=R17-2
+Added Net: Name=NetDL6_1
+Added Pin To Net: NetName=NetDL7_1 Pin=DL7-1
+Added Pin To Net: NetName=NetDL7_1 Pin=R18-2
+Added Net: Name=NetDL7_1
+Added Pin To Net: NetName=NetR20_1 Pin=R20-1
+Added Pin To Net: NetName=NetR20_1 Pin=U1-41
+Added Pin To Net: NetName=NetR20_1 Pin=U2-3
+Added Net: Name=NetR20_1
+Added Pin To Net: NetName=NetTPRX_1 Pin=TPRX-1
+Added Pin To Net: NetName=NetTPRX_1 Pin=U1-11
+Added Net: Name=NetTPRX_1
+Added Pin To Net: NetName=NetTPTX_1 Pin=TPTX-1
+Added Pin To Net: NetName=NetTPTX_1 Pin=U1-14
+Added Net: Name=NetTPTX_1
+Added Pin To Net: NetName=NetU1_23 Pin=U1-23
+Added Net: Name=NetU1_23
+Added Pin To Net: NetName=NetU1_25 Pin=U1-25
+Added Net: Name=NetU1_25
+Added Pin To Net: NetName=NetU1_38 Pin=U1-38
+Added Net: Name=NetU1_38
+Added Pin To Net: NetName=NetU1_42 Pin=U1-42
+Added Net: Name=NetU1_42
+Added Pin To Net: NetName=NetU1_52 Pin=U1-52
+Added Net: Name=NetU1_52
+Change Class Name : Old Net Name=TP1_Nets New Net Name=TP_power_3.3__Nets
+Change Class Name : Old Net Name=TP2_Nets New Net Name=TP_erase_Nets
+Change Class Name : Old Net Name=TP3_Nets New Net Name=TP3USB_N_Nets
+Change Class Name : Old Net Name=TP5_Nets New Net Name=TP5USB_P_Nets
+Change Class Name : Old Net Name=TP12_Nets New Net Name=TP_VBUS_Nets
+Change Class Name : Old Net Name=TP13_Nets New Net Name=TP_power_3.3___Nets
+Change Class Name : Old Net Name=TP14_Nets New Net Name=TP_VddOut_Nets
+Change Class Name : Old Net Name=Y1_Nets New Net Name=Clock_Nets
+Added Class: Name=Sam4S wifi extension3
+Added Class: Name=C18_Nets
+Added Class: Name=C20_Nets
+Added Class: Name=C21_Nets
+Added Class: Name=C22_Nets
+Added Class: Name=C23_Nets
+Added Class: Name=DL5_Nets
+Added Class: Name=DL6_Nets
+Added Class: Name=DL7_Nets
+Added Class: Name=R17_Nets
+Added Class: Name=R18_Nets
+Added Class: Name=R19_Nets
+Added Class: Name=R20_Nets
+Added Class: Name=TP_GND__Nets
+Added Class: Name=TP_pin_11_Nets
+Added Class: Name=TP_pin_PA15_Nets
+Added Class: Name=TP_power_3.3_Nets
+Added Class: Name=TP_power_5_Nets
+Added Class: Name=TPRX_Nets
+Added Class: Name=TPTX_Nets
+Added Class: Name=Wifi I/O_Nets
+Added Class: Name=Wifi Power Connections_Nets
+Added Member To Class: ClassName=Sam4S Basic Board 5 Member=Component Clock 12MHz
+Added Member To Class: ClassName=U2_Nets Member=Wire NetC18_1
+Added Member To Class: ClassName=U1_Nets Member=Wire NetR20_1
+Added Member To Class: ClassName=U2_Nets Member=Wire NetR20_1
+Added Member To Class: ClassName=U1_Nets Member=Wire NetTP_pin_11_1
+Added Member To Class: ClassName=U1_Nets Member=Wire NetTP_pin_PA15_1
+Added Member To Class: ClassName=U1_Nets Member=Wire NetTPRX_1
+Added Member To Class: ClassName=U1_Nets Member=Wire NetTPTX_1
+Added Member To Class: ClassName=U1_Nets Member=Wire NetU1_23
+Added Member To Class: ClassName=U1_Nets Member=Wire NetU1_25
+Added Member To Class: ClassName=U1_Nets Member=Wire NetU1_38
+Added Member To Class: ClassName=U1_Nets Member=Wire NetU1_42
+Added Member To Class: ClassName=U1_Nets Member=Wire NetU1_52
+Added Room: Name=Sam4S wifi extension3

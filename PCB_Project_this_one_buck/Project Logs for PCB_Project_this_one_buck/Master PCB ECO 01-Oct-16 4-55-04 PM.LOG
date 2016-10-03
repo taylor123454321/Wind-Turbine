@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=NetC18_1 Pin=Input power-1
+Removed Pin From Net: NetName=NetC18_2 Pin=Input power-2
+Removed Member From Class: ClassName=Sam4S Power Distribution_5 Member=L4
+Added Pin To Net: NetName=NetC18_2 Pin=Input power-1
+Added Pin To Net: NetName=NetC18_1 Pin=Input power-2
+Added Member To Class: ClassName=Sam4S Power Distribution_5 Member=Component L2 Ferrite Bead

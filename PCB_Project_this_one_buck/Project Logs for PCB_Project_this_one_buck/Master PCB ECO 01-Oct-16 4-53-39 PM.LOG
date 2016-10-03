@@ -1,0 +1,9 @@
+Change Component DesignItemId : Designator=C18 Old DesignItemId=Cap New DesignItemId=CA_1000uF_50V
+Change Component DesignItemId : Designator=C19 Old DesignItemId=Cap New DesignItemId=CA_1000uF_50V
+Change Component Footprint: Designator=C18 Old Footprint=RAD-0.3 New Footprint=PANA-J16
+Change Component Footprint: Designator=C19 Old Footprint=RAD-0.3 New Footprint=PANA-J16
+Change Component Comment : Designator=C18 Old Comment=Cap New Comment=1000uF/50V
+Change Component Comment : Designator=C19 Old Comment=Cap New Comment=1000uF/50V
+Change Component Designator: OldDesignator=L2 NewDesignator=L4
+Change Net Name : Old Net Name=NetL2_0 New Net Name=NetL4_0
+Added Member To Class: ClassName=Sam4S Buck board Member=Component L4 inductor

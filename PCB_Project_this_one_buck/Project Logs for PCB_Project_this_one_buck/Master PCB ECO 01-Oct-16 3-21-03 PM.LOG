@@ -1,0 +1,57 @@
+Removed Pin From Net: NetName=+5V Pin=D2-1
+Removed Pin From Net: NetName=NetC17_2 Pin=D2-2
+Removed Pin From Net: NetName=NetQ1_3 Pin=U1-1
+Removed Pin From Net: NetName=NetC18_1 Pin=U1-2
+Removed Pin From Net: NetName=NetU1_3 Pin=U1-3
+Removed Member From Class: ClassName=Sam4S Buck board Member=U1
+Change Component DesignItemId : Designator=D2 Old DesignItemId=DS_SS14E3 New DesignItemId=Diode(GP2D)
+Change Component Footprint: Designator=D2 Old Footprint=DIOM4227X23N New Footprint=PCBComponent_1 - duplicate
+Change Component Comment : Designator=D2 Old Comment=SS14-E3/5AT New Comment=Diode(GP2D)
+Added Component: Designator=D2(DIOM4227X23N)
+Added Component: Designator=U4(TO-220)
+Added Pin To Net: NetName=+5V Pin=D2-1
+Added Pin To Net: NetName=NetU1_3 Pin=U1-3
+Added Pin To Net: NetName=NetU1_4 Pin=U1-4
+Added Pin To Net: NetName=NetU1_5 Pin=U1-5
+Added Pin To Net: NetName=NetU1_6 Pin=U1-6
+Added Pin To Net: NetName=NetU1_9 Pin=U1-9
+Added Pin To Net: NetName=NetU1_10 Pin=U1-10
+Added Pin To Net: NetName=NetU1_11 Pin=U1-11
+Added Pin To Net: NetName=NetU1_13 Pin=U1-13
+Added Pin To Net: NetName=NetU1_14 Pin=U1-14
+Added Pin To Net: NetName=NetU1_15 Pin=U1-15
+Added Pin To Net: NetName=NetU1_16 Pin=U1-16
+Added Pin To Net: NetName=NetU1_19 Pin=U1-19
+Added Pin To Net: NetName=NetU1_20 Pin=U1-20
+Added Pin To Net: NetName=NetU1_23 Pin=U1-23
+Added Pin To Net: NetName=NetU1_25 Pin=U1-25
+Added Pin To Net: NetName=NetR3_1 Pin=U1-26
+Added Pin To Net: NetName=NetTP_pin_PA11_1 Pin=U1-28
+Added Pin To Net: NetName=NetR7_2 Pin=U1-31
+Added Pin To Net: NetName=TDI Pin=U1-33
+Added Pin To Net: NetName=USB DETECT Pin=U1-35
+Added Pin To Net: NetName=SCL Pin=U1-36
+Added Pin To Net: NetName=NetU1_37 Pin=U1-37
+Added Pin To Net: NetName=NetU1_38 Pin=U1-38
+Added Pin To Net: NetName=NRST Pin=U1-39
+Added Pin To Net: NetName=GND Pin=U1-40
+Added Pin To Net: NetName=NetU1_41 Pin=U1-41
+Added Pin To Net: NetName=NetU1_42 Pin=U1-42
+Added Pin To Net: NetName=SDA Pin=U1-43
+Added Pin To Net: NetName=LED3 Pin=U1-44
+Added Pin To Net: NetName=LED2 Pin=U1-47
+Added Pin To Net: NetName=LED1 Pin=U1-48
+Added Pin To Net: NetName=TDO Pin=U1-49
+Added Pin To Net: NetName=GND Pin=U1-50
+Added Pin To Net: NetName=TMS Pin=U1-51
+Added Pin To Net: NetName=NetQ1_1 Pin=U1-52
+Added Pin To Net: NetName=TCK Pin=U1-53
+Added Pin To Net: NetName=ERASE Pin=U1-55
+Added Pin To Net: NetName=NetR6_2 Pin=U1-56
+Added Pin To Net: NetName=NetR5_2 Pin=U1-57
+Added Pin To Net: NetName=NetC2_2 Pin=U1-61
+Added Pin To Net: NetName=NetC1_2 Pin=U1-62
+Added Pin To Net: NetName=NetQ1_3 Pin=U4-1
+Added Pin To Net: NetName=NetC18_1 Pin=U4-2
+Added Pin To Net: NetName=NetC19_1 Pin=U4-3
+Added Member To Class: ClassName=Sam4S Buck board Member=Component U4 STP140NF75

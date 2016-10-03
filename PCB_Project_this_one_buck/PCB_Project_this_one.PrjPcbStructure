@@ -1,0 +1,4 @@
+Record=TopLevelDocument|FileName=Master.SchDoc
+Record=SheetSymbol|SourceDocument=Master.SchDoc|Designator=Designator|SchDesignator=Designator|FileName=Sam4S main control board.SchDoc|SymbolType=Normal|RawFileName=Sam4S main control board.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=Master.SchDoc|Designator=Designator|SchDesignator=Designator|FileName=Sam4S Power Distribution_5.SchDoc|SymbolType=Normal|RawFileName=Sam4S Power Distribution_5.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=Master.SchDoc|Designator=Designator|SchDesignator=Designator|FileName=Sam4S Basic Board 5.SchDoc|SymbolType=Normal|RawFileName=Sam4S Basic Board 5.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
