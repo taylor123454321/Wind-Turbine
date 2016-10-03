@@ -243,23 +243,6 @@ GenerateClassCluster=0
 DocumentUniqueId=QFYXEMYI
 
 [Document13]
-DocumentPath=..\..\..\..\Public\Documents\Altium\AD16\Library\ECE\ECE Components\ECE Components_15_8.IntLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document14]
 DocumentPath=Sam4s Hdrive pitch.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -276,7 +259,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HWKJNUXN
 
-[Document15]
+[Document14]
 DocumentPath=Sam4s Hdrives power.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -292,6 +275,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HMUUQDCM
+
+[Document15]
+DocumentPath=..\..\..\..\..\Public\Documents\Altium\AD16\Library\ECE\ECE Components\ECE Components_15_8.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
 
 [GeneratedDocument1]
 DocumentPath=Project Outputs for PCB_Project_this_one\Design Rule Check - Master.html

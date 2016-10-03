@@ -192,7 +192,7 @@ GenerateClassCluster=0
 DocumentUniqueId=AGDGTJGC
 
 [Document10]
-DocumentPath=..\..\..\..\Public\Documents\Altium\AD16\Library\ECE\ECE Components\ECE Components_15_8.IntLib
+DocumentPath=..\..\..\..\..\Public\Documents\Altium\AD16\Library\ECE\ECE Components\ECE Components_15_8.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
