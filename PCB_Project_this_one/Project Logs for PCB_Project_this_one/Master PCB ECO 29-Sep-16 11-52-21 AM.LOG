@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=GND Pin=C17-1
+Removed Pin From Net: NetName=NetC17_2 Pin=C17-2
+Added Component: Designator=C17(CAPC1608L)
+Added Component: Designator=H_drive(DKD36)
+Added Pin To Net: NetName=GND Pin=C17-1
+Added Pin To Net: NetName=NetC17_2 Pin=C17-2
+Added Member To Class: ClassName=Sam4S main control board Member=Component C17 100nF
+Added Member To Class: ClassName=Sam4S main control board Member=Component H_drive DRV8432_DKD_36
+Added Room: Name=Sam4S Basic Board 5
+Added Room: Name=Sam4S main control board
+Added Room: Name=Sam4S Power Distribution_5

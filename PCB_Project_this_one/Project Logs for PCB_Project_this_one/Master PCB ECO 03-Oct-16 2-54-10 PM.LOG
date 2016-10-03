@@ -1,0 +1,50 @@
+Removed Pin From Net: NetName=NetD2_2 Pin=D1-2
+Removed Pin From Net: NetName=NetU1_3 Pin=Wind ADC1-1
+Removed Pin From Net: NetName=NetU1_4 Pin=Wind ADC1-2
+Removed Pin From Net: NetName=NetU1_14 Pin=Wind PIO1-1
+Removed Pin From Net: NetName=NetU1_11 Pin=Wind PIO1-2
+Removed Pin From Net: NetName=NetU1_16 Pin=Yaw Encoder1-1
+Removed Pin From Net: NetName=NetU1_13 Pin=Yaw Encoder1-2
+Removed Pin From Net: NetName=NetU1_10 Pin=Yaw Encoder1-3
+Change Component DesignItemId : Designator=Pitch ADC1 Old DesignItemId=Header 2 New DesignItemId=Header 4
+Change Component DesignItemId : Designator=Wind ADC1 Old DesignItemId=Header 2 New DesignItemId=Header 5
+Change Component DesignItemId : Designator=Wind PIO1 Old DesignItemId=Header 2 New DesignItemId=Header 5
+Change Component DesignItemId : Designator=Yaw Encoder1 Old DesignItemId=Header 3 New DesignItemId=Header 6
+Change Component Footprint: Designator=Pitch ADC1 Old Footprint=HDR1X2 New Footprint=HDR1X4
+Change Component Footprint: Designator=Wind ADC1 Old Footprint=HDR1X2 New Footprint=HDR1X5
+Change Component Footprint: Designator=Wind PIO1 Old Footprint=HDR1X2 New Footprint=HDR1X5
+Change Component Footprint: Designator=Yaw Encoder1 Old Footprint=HDR1X3 New Footprint=HDR1X6
+Change Component Comment : Designator=Pitch ADC1 Old Comment=Header 2 New Comment=Header 4
+Change Component Comment : Designator=Wind ADC1 Old Comment=Header 2 New Comment=Header 5
+Change Component Comment : Designator=Wind PIO1 Old Comment=Header 2 New Comment=Header 5
+Change Component Comment : Designator=Yaw Encoder1 Old Comment=Header 3 New Comment=Header 6
+Added Component: Designator=D2(DIOM4227X23N)
+Added Pin To Net: NetName=NetC3_2 Pin=D1-2
+Added Pin To Net: NetName=+5V Pin=D1-1
+Added Pin To Net: NetName=NetD2_2 Pin=D1-2
+Added Pin To Net: NetName=+3V3 Pin=Pitch ADC1-1
+Added Pin To Net: NetName=+5V Pin=Pitch ADC1-2
+Added Pin To Net: NetName=GND Pin=Pitch ADC1-4
+Added Pin To Net: NetName=+3V3 Pin=Wind ADC1-1
+Added Pin To Net: NetName=+5V Pin=Wind ADC1-2
+Added Pin To Net: NetName=NetU1_3 Pin=Wind ADC1-3
+Added Pin To Net: NetName=NetU1_4 Pin=Wind ADC1-4
+Added Pin To Net: NetName=GND Pin=Wind ADC1-5
+Added Pin To Net: NetName=+3V3 Pin=Wind PIO1-1
+Added Pin To Net: NetName=+5V Pin=Wind PIO1-2
+Added Pin To Net: NetName=NetU1_14 Pin=Wind PIO1-3
+Added Pin To Net: NetName=NetU1_11 Pin=Wind PIO1-4
+Added Pin To Net: NetName=GND Pin=Wind PIO1-5
+Added Pin To Net: NetName=+3V3 Pin=Yaw Encoder1-1
+Added Pin To Net: NetName=+5V Pin=Yaw Encoder1-2
+Added Pin To Net: NetName=NetU1_16 Pin=Yaw Encoder1-3
+Added Pin To Net: NetName=NetU1_13 Pin=Yaw Encoder1-4
+Added Pin To Net: NetName=NetU1_10 Pin=Yaw Encoder1-5
+Added Pin To Net: NetName=GND Pin=Yaw Encoder1-6
+Added Pin To Net: NetName=NetPitch ADC1_3 Pin=Pitch ADC1-3
+Added Pin To Net: NetName=NetPitch ADC1_3 Pin=U1-5
+Added Net: Name=NetPitch ADC1_3
+Added Room: Name=Sam4s Hdrive brake
+Added Room: Name=Sam4s Hdrive pitch
+Added Room: Name=Sam4s Hdrives power
+Added Room: Name=Sam4S main control board

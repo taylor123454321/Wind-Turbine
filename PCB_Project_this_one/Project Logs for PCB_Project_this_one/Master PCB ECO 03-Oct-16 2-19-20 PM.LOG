@@ -1,0 +1,42 @@
+Removed Pin From Net: NetName=NetD2_2 Pin=D1-2
+Removed Member From Class: ClassName=Sam4s Hdrives power Member=H1
+Added Component: Designator=Buck1(DC_buck_con)
+Added Component: Designator=Buck2(i6a DC buck con)
+Added Component: Designator=D2(DIOM4227X23N)
+Added Component: Designator=Motor power in(HDR1X2)
+Added Component: Designator=R23(RESC1608L)
+Added Component: Designator=U3(SOT230P700X180-4N)
+Added Pin To Net: NetName=GND Pin=Buck1-1
+Added Pin To Net: NetName=NetC19_2 Pin=Buck1-2
+Added Pin To Net: NetName=GND Pin=Buck1-3
+Added Pin To Net: NetName=NetC18_2 Pin=Buck1-4
+Added Pin To Net: NetName=GND Pin=Buck2-4
+Added Pin To Net: NetName=NetC19_2 Pin=Buck2-7
+Added Pin To Net: NetName=NetC19_2 Pin=Buck2-8
+Added Pin To Net: NetName=NetC3_2 Pin=D1-2
+Added Pin To Net: NetName=+5V Pin=D1-1
+Added Pin To Net: NetName=NetD2_2 Pin=D1-2
+Added Pin To Net: NetName=GND Pin=R23-1
+Added Pin To Net: NetName=GND Pin=U3-1
+Added Pin To Net: NetName=+5V Pin=U3-2
+Added Pin To Net: NetName=NetC18_2 Pin=U3-3
+Added Pin To Net: NetName=+5V Pin=U3-4
+Change Net Name : Old Net Name=NetC18_2 New Net Name=NetBuck1_4
+Change Net Name : Old Net Name=NetC19_2 New Net Name=NetBuck1_2
+Added Pin To Net: NetName=NetBuck2_1 Pin=Buck2-1
+Added Pin To Net: NetName=NetBuck2_1 Pin=Motor power in-1
+Added Net: Name=NetBuck2_1
+Added Pin To Net: NetName=NetBuck2_2 Pin=Buck2-2
+Added Pin To Net: NetName=NetBuck2_2 Pin=U1-30
+Added Net: Name=NetBuck2_2
+Added Pin To Net: NetName=NetBuck2_3 Pin=Buck2-3
+Added Pin To Net: NetName=NetBuck2_3 Pin=Motor power in-2
+Added Net: Name=NetBuck2_3
+Added Pin To Net: NetName=NetBuck2_6 Pin=Buck2-6
+Added Pin To Net: NetName=NetBuck2_6 Pin=R23-2
+Added Net: Name=NetBuck2_6
+Added Member To Class: ClassName=Sam4s Hdrives power Member=Component Buck1 DC buck
+Added Member To Class: ClassName=Sam4s Hdrives power Member=Component Buck2 i6a DC buck
+Added Member To Class: ClassName=Sam4s Hdrives power Member=Component Motor power in Header 2
+Added Member To Class: ClassName=Sam4s Hdrives power Member=Component R23 430R
+Added Member To Class: ClassName=Sam4s Hdrives power Member=Component U3 TLV1117-50CDCY

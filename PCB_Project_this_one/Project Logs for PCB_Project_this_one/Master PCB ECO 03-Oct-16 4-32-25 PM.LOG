@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=NetD2_2 Pin=D1-2
+Added Component: Designator=D2(DIOM4227X23N)
+Added Pin To Net: NetName=NetC3_2 Pin=D1-2
+Added Pin To Net: NetName=+5V Pin=D1-1
+Added Pin To Net: NetName=NetD2_2 Pin=D1-2

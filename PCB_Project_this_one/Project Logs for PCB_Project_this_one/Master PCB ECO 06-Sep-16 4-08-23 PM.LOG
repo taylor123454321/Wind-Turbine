@@ -1,0 +1,46 @@
+Added Component: Designator=Brake(HDR1X4)
+Added Component: Designator=Pitch ADC(HDR1X2)
+Added Component: Designator=Pitch Stepper motor(HDR1X4)
+Added Component: Designator=Wind ADC(HDR1X2)
+Added Component: Designator=Wind PIO(HDR1X2)
+Added Component: Designator=Yaw Encoder(HDR1X3)
+Added Component: Designator=Yaw motor control(HDR1X2)
+Added Pin To Net: NetName=GND Pin=Brake-4
+Added Pin To Net: NetName=NetU1_3 Pin=Wind ADC-1
+Added Pin To Net: NetName=NetU1_4 Pin=Wind ADC-2
+Added Pin To Net: NetName=NetU1_37 Pin=Wind PIO-1
+Added Pin To Net: NetName=NetU1_25 Pin=Wind PIO-2
+Added Pin To Net: NetName=NetU1_16 Pin=Yaw Encoder-1
+Added Pin To Net: NetName=NetU1_13 Pin=Yaw Encoder-2
+Added Pin To Net: NetName=NetU1_14 Pin=Yaw motor control-1
+Added Pin To Net: NetName=NetU1_11 Pin=Yaw motor control-2
+Added Pin To Net: NetName=3.3V Pin=Pitch Stepper motor-1
+Added Pin To Net: NetName=3.3V Pin=U1-52
+Added Net: Name=3.3V
+Added Pin To Net: NetName=5V Pin=Brake-1
+Added Net: Name=5V
+Added Pin To Net: NetName=NetBrake_2 Pin=Brake-2
+Added Pin To Net: NetName=NetBrake_2 Pin=U1-23
+Added Net: Name=NetBrake_2
+Added Pin To Net: NetName=NetBrake_3 Pin=Brake-3
+Added Pin To Net: NetName=NetBrake_3 Pin=U1-15
+Added Net: Name=NetBrake_3
+Added Pin To Net: NetName=NetPitch ADC_1 Pin=Pitch ADC-1
+Added Pin To Net: NetName=NetPitch ADC_1 Pin=U1-5
+Added Net: Name=NetPitch ADC_1
+Added Pin To Net: NetName=NetPitch Stepper motor_2 Pin=Pitch Stepper motor-2
+Added Pin To Net: NetName=NetPitch Stepper motor_2 Pin=U1-42
+Added Net: Name=NetPitch Stepper motor_2
+Added Pin To Net: NetName=NetPitch Stepper motor_3 Pin=Pitch Stepper motor-3
+Added Pin To Net: NetName=NetPitch Stepper motor_3 Pin=U1-41
+Added Net: Name=NetPitch Stepper motor_3
+Added Pin To Net: NetName=NetPitch Stepper motor_4 Pin=Pitch Stepper motor-4
+Added Pin To Net: NetName=NetPitch Stepper motor_4 Pin=U1-38
+Added Net: Name=NetPitch Stepper motor_4
+Added Pin To Net: NetName=NetU1_9 Pin=U1-9
+Added Net: Name=NetU1_9
+Added Pin To Net: NetName=NetU1_10 Pin=U1-10
+Added Pin To Net: NetName=NetU1_10 Pin=Yaw Encoder-3
+Added Net: Name=NetU1_10
+Added Class: Name=Sam4S main control board
+Added Room: Name=Sam4S main control board

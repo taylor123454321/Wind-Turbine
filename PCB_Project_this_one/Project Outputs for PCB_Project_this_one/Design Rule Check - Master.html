@@ -1,0 +1,622 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD16\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">06-Sep-16</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">12:37:07 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:02</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc" class="file"><acronym title="C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc">C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">86</td></tr>
+</table>
+</td>
+</table><a name="IDB1OPDWORLTFKFSKOW4STAH3IWBQ3F03MIL5Z4BEDMW0DZ1U5KR0J"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDFL3W32IQUWB1DGF04IUHOLKRMCWMXTCSWCAYTJNERZWKFD5JNPS">Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5'))</a></td>
+<td class="column2">25</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDYGRYPT2RAWNDPVZIP0HYM0IONF2UNLR0ZPN1F5LNIUNMUUTZIVMM">Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5'))</a></td>
+<td class="column2">44</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDZZGGFASGLB4DK252ANTZB20SBM0EN0BEHT3K1WG2W5ZVF0SKFJPD">Clearance Constraint (Gap=0.15mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDYXCBASZIDYLID4ZBDJUDYXSNWHRAVT2GNHAX05L3K4EOU4BQ5CGJ">Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDA52EB5KTRYRUFVOMDWM1NET1HGFHS4G455HRHHBQHHXV2IRBIODD">Clearance Constraint (Gap=0.15mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID3O20TLDTKPS3PHZVF3RKHXLWUNUSYL0VZY5RTVDZI33QAF23WFYC">Width Constraint (Min=0.15mm) (Max=2mm) (Preferred=0.3mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDSAWNN3RPTT3WLBEX2YSKM5Q54OHNPYMGEUYNAKK0RW2I3NPBJD2I">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDEJH1ATAB1VGPE41GNI5J4ZV2GCMCOM1EKTFV3UIGVWXHLYH5V2KJ">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID0HKB2GGSMAAKOBK4UETMXCI0XBN4Q0Y0S41HSOBPL5I00NMYEWJE">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDKYZOBMSF2FJDLMQ4VDG0TLGG0FUSJUDG0WC1QUF25ZJWPEJXRXUG">Hole Size Constraint (Min=0.3mm) (Max=10mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDQUGEWYS4W2VYMEMR10Q2K51VCF4SGO42YSA5O3CEVEC1VERUOCPJ">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID10DWX3F0KJQAJ225RDK1UKEXDH53PEFSZQMA33N2YS1U3WW4OV1H">Minimum Solder Mask Sliver (Gap=0.25mm) (Disabled)(All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDSH3YFR2UCTPVK0VWLMWZQGIXCL5LH5N1AA5LBG5QXE1BLXU1NCB">Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDTB3NDNOKKKAYBTOBVC4JNCZANIPBKVMUQIN5ESFBVXJIWFOVJKKH">Silk to Silk (Clearance=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDQFMG30C415FHPJ3H3LIAM5KI1EQYBEFWDAEZPRP2HIENIRNPZCFD">Net Antennae (Tolerance=1mm) (All)</a></td>
+<td class="column2">8</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDRYMNK4FZQA1KKOXNFXZ3MFA0G2QFHAVFSO13EHENBLIKOEHOMML">Minimum Annular Ring (Minimum=0.1mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDRX44LCE1KKXUNHZ1525NQZCIWPMVB4WKRJVPH1JMY3Y5RYVHGIAC">SMD To Corner (Distance=0.25mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDVNXHWQP4C45CC1QSFMTAHYHNBK3DLW4XRV2GQOF4QBTERI0D3EQD">SMD To Plane Constraint (Distance=5mm) (All)</a></td>
+<td class="column2">9</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDEATFM1LI5MI0EBJDFCBS3F3AUL1QNWZFSPTHFQNUUHJWEJWSTF3F">SMD Neck-Down Constraint (Percent=50%) (Disabled)(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">86</td>
+</tr>
+</table><br><a name="IDFL3W32IQUWB1DGF04IUHOLKRMCWMXTCSWCAYTJNERZWKFD5JNPS"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5'))</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3044.291mil|Location1.Y=0mil|Location2.Y=6023.622mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3044.291mil|Location1.Y=0mil|Location2.Y=6023.622mil|Absolute=True">Room Definition: Between Component U2-TLV70233DBVR (24.5mm,74.75mm) on Top Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=2639.764mil|Location1.Y=0mil|Location2.Y=5236.22mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=2639.764mil|Location1.Y=0mil|Location2.Y=5236.22mil|Absolute=True">Room Definition: Between SMT Small Component TP16-Gnd (14.25mm,55mm) on Top Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=5230.315mil|Location1.Y=0mil|Location2.Y=5746.063mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=5230.315mil|Location1.Y=0mil|Location2.Y=5746.063mil|Absolute=True">Room Definition: Between SMT Small Component TP_GND_-Gnd (80.25mm,67.75mm) on Top Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3141.732mil|Location1.Y=0mil|Location2.Y=5167.323mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3141.732mil|Location1.Y=0mil|Location2.Y=5167.323mil|Absolute=True">Room Definition: Between SMT Small Component TP_VddOut-VddOut (27mm,53.25mm) on Top Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3311.024mil|Location1.Y=0mil|Location2.Y=6041.338mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3311.024mil|Location1.Y=0mil|Location2.Y=6041.338mil|Absolute=True">Room Definition: Between SMT Small Component TP_power_3.3__-3V3 (31.5mm,75.25mm) on Top Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3025.591mil|Location1.Y=0mil|Location2.Y=5431.102mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3025.591mil|Location1.Y=0mil|Location2.Y=5431.102mil|Absolute=True">Room Definition: Between SMT Small Component R16-1R (24mm,60.75mm) on Bottom Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3216.535mil|Location1.Y=0mil|Location2.Y=5433.071mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3216.535mil|Location1.Y=0mil|Location2.Y=5433.071mil|Absolute=True">Room Definition: Between SMT Small Component L2-Ferrite Bead (28.75mm,60.75mm) on Bottom Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=2830.709mil|Location1.Y=0mil|Location2.Y=5423.228mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=2830.709mil|Location1.Y=0mil|Location2.Y=5423.228mil|Absolute=True">Room Definition: Between SMT Small Component C16-4.7uF (19.5mm,60.75mm) on Bottom Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3279.528mil|Location1.Y=0mil|Location2.Y=5494.094mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3279.528mil|Location1.Y=0mil|Location2.Y=5494.094mil|Absolute=True">Room Definition: Between SMT Small Component C15-100nF (31.25mm,62.75mm) on Bottom Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3637.795mil|Location1.Y=0mil|Location2.Y=5312.992mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3637.795mil|Location1.Y=0mil|Location2.Y=5312.992mil|Absolute=True">Room Definition: Between SMT Small Component C14-100nF (41mm,57.5mm) on Bottom Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3653.543mil|Location1.Y=0mil|Location2.Y=5090.551mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3653.543mil|Location1.Y=0mil|Location2.Y=5090.551mil|Absolute=True">Room Definition: Between SMT Small Component C13-100nF (40.75mm,52.5mm) on Bottom Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3496.063mil|Location1.Y=0mil|Location2.Y=5120.079mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3496.063mil|Location1.Y=0mil|Location2.Y=5120.079mil|Absolute=True">Room Definition: Between SMT Small Component C12-100nF (36.75mm,53.25mm) on Bottom Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3496.063mil|Location1.Y=0mil|Location2.Y=5198.819mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3496.063mil|Location1.Y=0mil|Location2.Y=5198.819mil|Absolute=True">Room Definition: Between SMT Small Component C11-100nF (36.75mm,55.25mm) on Bottom Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3250mil|Location1.Y=0mil|Location2.Y=5228.346mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3250mil|Location1.Y=0mil|Location2.Y=5228.346mil|Absolute=True">Room Definition: Between SMT Small Component C10-100nF (30.5mm,56mm) on Top Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3545.276mil|Location1.Y=0mil|Location2.Y=5277.559mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3545.276mil|Location1.Y=0mil|Location2.Y=5277.559mil|Absolute=True">Room Definition: Between SMT Small Component C9-100nF (38mm,57.25mm) on Bottom Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3673.228mil|Location1.Y=0mil|Location2.Y=5208.661mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3673.228mil|Location1.Y=0mil|Location2.Y=5208.661mil|Absolute=True">Room Definition: Between SMT Small Component C8-100nF (41.25mm,55.5mm) on Bottom Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3387.795mil|Location1.Y=0mil|Location2.Y=4864.173mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3387.795mil|Location1.Y=0mil|Location2.Y=4864.173mil|Absolute=True">Room Definition: Between SMT Small Component C7-100nF (34mm,46.75mm) on Top Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3263.78mil|Location1.Y=0mil|Location2.Y=5352.362mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3263.78mil|Location1.Y=0mil|Location2.Y=5352.362mil|Absolute=True">Room Definition: Between SMT Small Component C6-100nF (31.5mm,58.5mm) on Top Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3106.299mil|Location1.Y=0mil|Location2.Y=5992.126mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3106.299mil|Location1.Y=0mil|Location2.Y=5992.126mil|Absolute=True">Room Definition: Between SMT Small Component C5-10uF (27.5mm,74.75mm) on Top Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=2801.181mil|Location1.Y=0mil|Location2.Y=6001.968mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=2801.181mil|Location1.Y=0mil|Location2.Y=6001.968mil|Absolute=True">Room Definition: Between SMT Small Component C4-10uF (19.75mm,75mm) on Top Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=2469.488mil|Location1.Y=0mil|Location2.Y=6106.299mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=2469.488mil|Location1.Y=0mil|Location2.Y=6106.299mil|Absolute=True">Room Definition: Between SMT Small Component D1-SS14-E3/5AT (10.25mm,75.75mm) on Top Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=2646.654mil|Location1.Y=0mil|Location2.Y=6106.299mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=2646.654mil|Location1.Y=0mil|Location2.Y=6106.299mil|Absolute=True">Room Definition: Between SMT Small Component D2-SS14-E3/5AT (14.75mm,75.75mm) on Top Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=2517.716mil|Location1.Y=0mil|Location2.Y=5866.141mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=2517.716mil|Location1.Y=0mil|Location2.Y=5866.141mil|Absolute=True">Room Definition: Between SMT Small Component L1-Ferrite Bead (11mm,71.75mm) on Top Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3498.032mil|Location1.Y=0mil|Location2.Y=6080.709mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3498.032mil|Location1.Y=0mil|Location2.Y=6080.709mil|Absolute=True">Room Definition: Between SMT Small Component TP_power_adiode-3V3 (36.25mm,76.25mm) on Top Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3053.149mil|Location1.Y=0mil|Location2.Y=5816.929mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3053.149mil|Location1.Y=0mil|Location2.Y=5816.929mil|Absolute=True">Room Definition: Between SMT Small Component TP_power_VBUS-3V3 (24.75mm,69.75mm) on Top Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDYGRYPT2RAWNDPVZIP0HYM0IONF2UNLR0ZPN1F5LNIUNMUUTZIVMM"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5'))</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3893.46mil|Location1.Y=0mil|Location2.Y=5908.147mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3893.46mil|Location1.Y=0mil|Location2.Y=5908.147mil|Absolute=True">Room Definition: Between SMT Small Component Clock-12MHz (40mm,70.75mm) on Bottom Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=5100.394mil|Location1.Y=0mil|Location2.Y=4785.433mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=5100.394mil|Location1.Y=0mil|Location2.Y=4785.433mil|Absolute=True">Room Definition: Between SMT Small Component C17-100nF (77.5mm,44.75mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=4035.189mil|Location1.Y=0mil|Location2.Y=5606.468mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=4035.189mil|Location1.Y=0mil|Location2.Y=5606.468mil|Absolute=True">Room Definition: Between SMT Small Component DL3-Red (49.592mm,65.703mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3778.543mil|Location1.Y=0mil|Location2.Y=5417.323mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3778.543mil|Location1.Y=0mil|Location2.Y=5417.323mil|Absolute=True">Room Definition: Between LCC Component U1-ATSAM4S8BA-ANR (38.75mm,54.975mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=4836.614mil|Location1.Y=0mil|Location2.Y=5588.583mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=4836.614mil|Location1.Y=0mil|Location2.Y=5588.583mil|Absolute=True">Room Definition: Between SMT Small Component TP11-TDI (70.25mm,63.75mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=4688.976mil|Location1.Y=0mil|Location2.Y=5588.583mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=4688.976mil|Location1.Y=0mil|Location2.Y=5588.583mil|Absolute=True">Room Definition: Between SMT Small Component TP10-TMS (66.5mm,63.75mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=4541.338mil|Location1.Y=0mil|Location2.Y=5588.583mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=4541.338mil|Location1.Y=0mil|Location2.Y=5588.583mil|Absolute=True">Room Definition: Between SMT Small Component TP9-TCK (62.75mm,63.75mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=4393.701mil|Location1.Y=0mil|Location2.Y=5588.583mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=4393.701mil|Location1.Y=0mil|Location2.Y=5588.583mil|Absolute=True">Room Definition: Between SMT Small Component TP8-TDO (59mm,63.75mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=4246.063mil|Location1.Y=0mil|Location2.Y=5588.583mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=4246.063mil|Location1.Y=0mil|Location2.Y=5588.583mil|Absolute=True">Room Definition: Between SMT Small Component TP7-nRST (55.25mm,63.75mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3724.409mil|Location1.Y=0mil|Location2.Y=4870.079mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3724.409mil|Location1.Y=0mil|Location2.Y=4870.079mil|Absolute=True">Room Definition: Between SMT Small Component TP_pin_11-PA11 (42mm,45.5mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=2622.047mil|Location1.Y=0mil|Location2.Y=5500mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=2622.047mil|Location1.Y=0mil|Location2.Y=5500mil|Absolute=True">Room Definition: Between SMT Small Component TP5USB_P-USB_P (14mm,61.5mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3222.441mil|Location1.Y=0mil|Location2.Y=4820.866mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3222.441mil|Location1.Y=0mil|Location2.Y=4820.866mil|Absolute=True">Room Definition: Between SMT Small Component TP_pin_PA15-PA15 (29.25mm,44.25mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=2622.047mil|Location1.Y=0mil|Location2.Y=5716.535mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=2622.047mil|Location1.Y=0mil|Location2.Y=5716.535mil|Absolute=True">Room Definition: Between SMT Small Component TP3USB_N-USB_N (14mm,67mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3685.039mil|Location1.Y=0mil|Location2.Y=5805.118mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3685.039mil|Location1.Y=0mil|Location2.Y=5805.118mil|Absolute=True">Room Definition: Between SMT Small Component TP_erase-Erase (41mm,69.25mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3685.039mil|Location1.Y=0mil|Location2.Y=5962.598mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3685.039mil|Location1.Y=0mil|Location2.Y=5962.598mil|Absolute=True">Room Definition: Between SMT Small Component TP_power_3.3_-3V3 (41mm,73.25mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=4413.386mil|Location1.Y=0mil|Location2.Y=5285.433mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=4413.386mil|Location1.Y=0mil|Location2.Y=5285.433mil|Absolute=True">Room Definition: Between SMT Small Component SW2-Reset (58.75mm,57mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=2907.48mil|Location1.Y=0mil|Location2.Y=5285.433mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=2907.48mil|Location1.Y=0mil|Location2.Y=5285.433mil|Absolute=True">Room Definition: Between SMT Small Component SW1-Sleep/Wake Up (20.5mm,50mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=2809.055mil|Location1.Y=0mil|Location2.Y=5828.74mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=2809.055mil|Location1.Y=0mil|Location2.Y=5828.74mil|Absolute=True">Room Definition: Between SMT Small Component R15-47K (19.75mm,70.25mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=2742.126mil|Location1.Y=0mil|Location2.Y=5797.244mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=2742.126mil|Location1.Y=0mil|Location2.Y=5797.244mil|Absolute=True">Room Definition: Between SMT Small Component R14-27K (17.25mm,70.25mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=4789.37mil|Location1.Y=0mil|Location2.Y=5391.732mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=4789.37mil|Location1.Y=0mil|Location2.Y=5391.732mil|Absolute=True">Room Definition: Between SMT Small Component R13-100K (70.25mm,59.5mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=4641.732mil|Location1.Y=0mil|Location2.Y=5391.732mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=4641.732mil|Location1.Y=0mil|Location2.Y=5391.732mil|Absolute=True">Room Definition: Between SMT Small Component R12-100K (66.5mm,59.5mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=4494.095mil|Location1.Y=0mil|Location2.Y=5391.732mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=4494.095mil|Location1.Y=0mil|Location2.Y=5391.732mil|Absolute=True">Room Definition: Between SMT Small Component R11-100K (62.75mm,59.5mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=4346.457mil|Location1.Y=0mil|Location2.Y=5391.732mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=4346.457mil|Location1.Y=0mil|Location2.Y=5391.732mil|Absolute=True">Room Definition: Between SMT Small Component R10-100K (59mm,59.5mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=4198.819mil|Location1.Y=0mil|Location2.Y=5391.732mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=4198.819mil|Location1.Y=0mil|Location2.Y=5391.732mil|Absolute=True">Room Definition: Between SMT Small Component R9-100K (55.25mm,59.5mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=4622.047mil|Location1.Y=0mil|Location2.Y=5194.882mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=4622.047mil|Location1.Y=0mil|Location2.Y=5194.882mil|Absolute=True">Room Definition: Between SMT Small Component R8-2K2 (66mm,54.5mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=4740.157mil|Location1.Y=0mil|Location2.Y=5204.725mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=4740.157mil|Location1.Y=0mil|Location2.Y=5204.725mil|Absolute=True">Room Definition: Between SMT Small Component R7-2K2 (69mm,54.75mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3568.898mil|Location1.Y=0mil|Location2.Y=5568.898mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3568.898mil|Location1.Y=0mil|Location2.Y=5568.898mil|Absolute=True">Room Definition: Between SMT Small Component R6-27R (39.25mm,64mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3519.685mil|Location1.Y=0mil|Location2.Y=5568.898mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3519.685mil|Location1.Y=0mil|Location2.Y=5568.898mil|Absolute=True">Room Definition: Between SMT Small Component R5-27R (38mm,64mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3845.824mil|Location1.Y=0mil|Location2.Y=5717.732mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3845.824mil|Location1.Y=0mil|Location2.Y=5717.732mil|Absolute=True">Room Definition: Between SMT Small Component R4-220R (45.634mm,68.43mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3072.834mil|Location1.Y=0mil|Location2.Y=4972.441mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3072.834mil|Location1.Y=0mil|Location2.Y=4972.441mil|Absolute=True">Room Definition: Between SMT Small Component R3-2K2 (26mm,49.5mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3822.408mil|Location1.Y=0mil|Location2.Y=5874.377mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3822.408mil|Location1.Y=0mil|Location2.Y=5874.377mil|Absolute=True">Room Definition: Between SMT Small Component R2-220R (45.039mm,72.409mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3786.073mil|Location1.Y=0mil|Location2.Y=5992.264mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3786.073mil|Location1.Y=0mil|Location2.Y=5992.264mil|Absolute=True">Room Definition: Between SMT Small Component R1-62R (44.116mm,75.403mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=5282.559mil|Location1.Y=0mil|Location2.Y=3329.803mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=5282.559mil|Location1.Y=0mil|Location2.Y=3329.803mil|Absolute=True">Room Definition: Between Small Component MT4-M3.2 NPTH (80mm,5mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=2329.803mil|Location1.Y=0mil|Location2.Y=3329.803mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=2329.803mil|Location1.Y=0mil|Location2.Y=3329.803mil|Absolute=True">Room Definition: Between Small Component MT3-M3.2 NPTH (5mm,5mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=5282.559mil|Location1.Y=0mil|Location2.Y=6085.709mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=5282.559mil|Location1.Y=0mil|Location2.Y=6085.709mil|Absolute=True">Room Definition: Between Small Component MT2-M3.2 NPTH (80mm,75mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=2329.803mil|Location1.Y=0mil|Location2.Y=6085.709mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=2329.803mil|Location1.Y=0mil|Location2.Y=6085.709mil|Absolute=True">Room Definition: Between Small Component MT1-M3.2 NPTH (5mm,75mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=4968.504mil|Location1.Y=0mil|Location2.Y=5994.157mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=4968.504mil|Location1.Y=0mil|Location2.Y=5994.157mil|Absolute=True">Room Definition: Between Component H3-ARM JTAG (61.235mm,71.789mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=5189.458mil|Location1.Y=0mil|Location2.Y=5439.921mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=5189.458mil|Location1.Y=0mil|Location2.Y=5439.921mil|Absolute=True">Room Definition: Between Component H2-I2C (76.75mm,54.25mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=2417.177mil|Location1.Y=0mil|Location2.Y=5745.706mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=2417.177mil|Location1.Y=0mil|Location2.Y=5745.706mil|Absolute=True">Room Definition: Between SIP Component H1-JS_USB_MINI_B (0.5mm,63.75mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3900.345mil|Location1.Y=0mil|Location2.Y=5608.89mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3900.345mil|Location1.Y=0mil|Location2.Y=5608.89mil|Absolute=True">Room Definition: Between SMT Small Component DL2-Yellow (46.167mm,65.764mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3766.309mil|Location1.Y=0mil|Location2.Y=5607.275mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3766.309mil|Location1.Y=0mil|Location2.Y=5607.275mil|Absolute=True">Room Definition: Between SMT Small Component DL1-Dark Green (42.763mm,65.723mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=5021.653mil|Location1.Y=0mil|Location2.Y=5592.52mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=5021.653mil|Location1.Y=0mil|Location2.Y=5592.52mil|Absolute=True">Room Definition: Between SMT Small Component C3-100nF (75.5mm,65.25mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3279.528mil|Location1.Y=0mil|Location2.Y=5651.575mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3279.528mil|Location1.Y=0mil|Location2.Y=5651.575mil|Absolute=True">Room Definition: Between SMT Small Component C2-10pF (31.25mm,66.75mm) on Bottom Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3279.528mil|Location1.Y=0mil|Location2.Y=5602.362mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=3279.528mil|Location1.Y=0mil|Location2.Y=5602.362mil|Absolute=True">Room Definition: Between SMT Small Component C1-10pF (31.25mm,65.5mm) on Bottom Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDQFMG30C415FHPJ3H3LIAM5KI1EQYBEFWDAEZPRP2HIENIRNPZCFD"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Net Antennae (Tolerance=1mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2721.894mil|Location2.X=2741.026mil|Location1.Y=4804.571mil|Location2.Y=4831.42mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2721.894mil|Location2.X=2741.026mil|Location1.Y=4804.571mil|Location2.Y=4831.42mil|Absolute=True">Net Antennae: Track (18.5mm,46mm)(20.062mm,44.438mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3233.705mil|Location2.X=3252.836mil|Location1.Y=4007.327mil|Location2.Y=4034.176mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3233.705mil|Location2.X=3252.836mil|Location1.Y=4007.327mil|Location2.Y=4034.176mil|Absolute=True">Net Antennae: Track (29.25mm,28mm)(31.5mm,25.75mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2666.776mil|Location2.X=2685.907mil|Location1.Y=4131.343mil|Location2.Y=4158.192mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2666.776mil|Location2.X=2685.907mil|Location1.Y=4131.343mil|Location2.Y=4158.192mil|Absolute=True">Net Antennae: Track (17.1mm,28.9mm)(18mm,28mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3391.185mil|Location2.X=3410.317mil|Location1.Y=4341.972mil|Location2.Y=4368.822mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3391.185mil|Location2.X=3410.317mil|Location1.Y=4341.972mil|Location2.Y=4368.822mil|Absolute=True">Net Antennae: Track (29.75mm,34.25mm)(35.5mm,34.25mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2462.051mil|Location2.X=2481.183mil|Location1.Y=4176.618mil|Location2.Y=4203.467mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2462.051mil|Location2.X=2481.183mil|Location1.Y=4176.618mil|Location2.Y=4203.467mil|Absolute=True">Net Antennae: Track (11.9mm,28.75mm)(11.9mm,30.05mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2635.28mil|Location2.X=2654.411mil|Location1.Y=4176.618mil|Location2.Y=4203.467mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2635.28mil|Location2.X=2654.411mil|Location1.Y=4176.618mil|Location2.Y=4203.467mil|Absolute=True">Net Antennae: Track (16.3mm,28.836mm)(16.3mm,30.05mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2619.532mil|Location2.X=2638.663mil|Location1.Y=4176.618mil|Location2.Y=4203.467mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2619.532mil|Location2.X=2638.663mil|Location1.Y=4176.618mil|Location2.Y=4203.467mil|Absolute=True">Net Antennae: Track (15.9mm,28.6mm)(15.9mm,30.05mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3980.752mil|Location2.X=4006.312mil|Location1.Y=4372.484mil|Location2.Y=4409.935mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3980.752mil|Location2.X=4006.312mil|Location1.Y=4372.484mil|Location2.Y=4409.935mil|Absolute=True">Net Antennae: Track (48.35mm,35.1mm)(50.55mm,35.1mm) on Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDVNXHWQP4C45CC1QSFMTAHYHNBK3DLW4XRV2GQOF4QBTERI0D3EQD"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">SMD To Plane Constraint (Distance=5mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-7.587mil|Location2.X=57.028mil|Location1.Y=-7.587mil|Location2.Y=14.518mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-7.587mil|Location2.X=57.028mil|Location1.Y=-7.587mil|Location2.Y=14.518mil|Absolute=True">SMD To Plane Constraint: Pad U2-5(25.85mm,75.7mm) on Top Layer Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-3.453mil|Location2.X=49.545mil|Location1.Y=-4.591mil|Location2.Y=11.595mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-3.453mil|Location2.X=49.545mil|Location1.Y=-4.591mil|Location2.Y=11.595mil|Absolute=True">SMD To Plane Constraint: Pad U1-18(35.5mm,49.45mm) on Top Layer Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-3.453mil|Location2.X=49.545mil|Location1.Y=-4.591mil|Location2.Y=11.595mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-3.453mil|Location2.X=49.545mil|Location1.Y=-4.591mil|Location2.Y=11.595mil|Absolute=True">SMD To Plane Constraint: Pad U1-17(35mm,49.45mm) on Top Layer Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-3.453mil|Location2.X=49.545mil|Location1.Y=-4.591mil|Location2.Y=11.595mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-3.453mil|Location2.X=49.545mil|Location1.Y=-4.591mil|Location2.Y=11.595mil|Absolute=True">SMD To Plane Constraint: Pad U1-7(33.225mm,55.725mm) on Top Layer Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-3.453mil|Location2.X=49.545mil|Location1.Y=-4.591mil|Location2.Y=11.595mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-3.453mil|Location2.X=49.545mil|Location1.Y=-4.591mil|Location2.Y=11.595mil|Absolute=True">SMD To Plane Constraint: Pad U1-2(33.225mm,58.225mm) on Top Layer Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-3.453mil|Location2.X=49.545mil|Location1.Y=-4.591mil|Location2.Y=11.595mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-3.453mil|Location2.X=49.545mil|Location1.Y=-4.591mil|Location2.Y=11.595mil|Absolute=True">SMD To Plane Constraint: Pad U1-1(33.225mm,58.725mm) on Top Layer Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-8.768mil|Location2.X=59.973mil|Location1.Y=-8.768mil|Location2.Y=15.353mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-8.768mil|Location2.X=59.973mil|Location1.Y=-8.768mil|Location2.Y=15.353mil|Absolute=True">SMD To Plane Constraint: Pad R4-2(44.884mm,68.43mm) on Top Layer Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-18.216mil|Location2.X=78.594mil|Location1.Y=-18.216mil|Location2.Y=22.035mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-18.216mil|Location2.X=78.594mil|Location1.Y=-18.216mil|Location2.Y=22.035mil|Absolute=True">SMD To Plane Constraint: Pad H2-1(74.365mm,48.526mm) on Top Layer Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-18.216mil|Location2.X=78.594mil|Location1.Y=-18.216mil|Location2.Y=22.035mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-18.216mil|Location2.X=78.594mil|Location1.Y=-18.216mil|Location2.Y=22.035mil|Absolute=True">SMD To Plane Constraint: Pad H2-2(79.211mm,49.805mm) on Top Layer Actual Distance = 2539.975mm</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

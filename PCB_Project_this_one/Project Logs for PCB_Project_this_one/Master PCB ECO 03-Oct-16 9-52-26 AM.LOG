@@ -1,0 +1,108 @@
+Removed Member From Class: ClassName=Sam4S main control board Member=C17
+Change Component Designator: OldDesignator=H_drive NewDesignator=H_drive_pitch
+Added Component: Designator=C50(CX1206)
+Added Component: Designator=C??(CAPC3216L)
+Added Component: Designator=C??(CAPC1608L)
+Added Component: Designator=C??(CAPC1608L)
+Added Component: Designator=C??(CAPC1608L)
+Added Component: Designator=C??(CAPC1608L)
+Added Component: Designator=C??(CAPC1608L)
+Added Component: Designator=C??(CAPC1608L)
+Added Component: Designator=C??(CAPC1608L)
+Added Component: Designator=H_drive_brake(DKD36)
+Added Component: Designator=R??(RESC1608L)
+Added Component: Designator=R??(RESC1608L)
+Added Pin To Net: NetName=GND Pin=C50-3
+Added Pin To Net: NetName=GND Pin=C50-4
+Added Pin To Net: NetName=GND Pin=C??-1
+Added Pin To Net: NetName=GND Pin=C??-1
+Added Pin To Net: NetName=GND Pin=C??-1
+Added Pin To Net: NetName=GND Pin=C??-1
+Added Pin To Net: NetName=GND Pin=C??-1
+Added Pin To Net: NetName=GND Pin=C??-1
+Added Pin To Net: NetName=GND Pin=C??-1
+Added Pin To Net: NetName=GND Pin=H_drive_pitch-8
+Added Pin To Net: NetName=GND Pin=R??-1
+Added Pin To Net: NetName=NetC50_1 Pin=C50-1
+Added Pin To Net: NetName=NetC50_1 Pin=H_drive_pitch-35
+Added Net: Name=NetC50_1
+Added Pin To Net: NetName=NetC50_2 Pin=C50-2
+Added Pin To Net: NetName=NetC50_2 Pin=H_drive_pitch-33
+Added Pin To Net: NetName=NetC50_2 Pin=Pitch Stepper motor-1
+Added Net: Name=NetC50_2
+Added Pin To Net: NetName=NetC??_1 Pin=C??-1
+Added Pin To Net: NetName=NetC??_1 Pin=H_drive_pitch-9
+Added Pin To Net: NetName=NetC??_1 Pin=H_drive_pitch-11
+Added Pin To Net: NetName=NetC??_1 Pin=H_drive_pitch-12
+Added Pin To Net: NetName=NetC??_1 Pin=H_drive_pitch-13
+Added Pin To Net: NetName=NetC??_1 Pin=R??-1
+Added Pin To Net: NetName=NetC??_1 Pin=R??-2
+Added Net: Name=NetC??_1
+Added Pin To Net: NetName=NetC??_2 Pin=C??-2
+Added Pin To Net: NetName=NetC??_2 Pin=C??-2
+Added Pin To Net: NetName=NetC??_2 Pin=C??-2
+Added Pin To Net: NetName=NetC??_2 Pin=C??-2
+Added Pin To Net: NetName=NetC??_2 Pin=C??-2
+Added Pin To Net: NetName=NetC??_2 Pin=C??-2
+Added Pin To Net: NetName=NetC??_2 Pin=H_drive_pitch-1
+Added Pin To Net: NetName=NetC??_2 Pin=H_drive_pitch-17
+Added Pin To Net: NetName=NetC??_2 Pin=H_drive_pitch-18
+Added Pin To Net: NetName=NetC??_2 Pin=H_drive_pitch-19
+Added Pin To Net: NetName=NetC??_2 Pin=H_drive_pitch-36
+Added Net: Name=NetC??_2
+Added Pin To Net: NetName=NetH_drive_pitch_2 Pin=H_drive_pitch-2
+Added Pin To Net: NetName=NetH_drive_pitch_2 Pin=U1-52
+Added Net: Name=NetH_drive_pitch_2
+Added Pin To Net: NetName=NetH_drive_pitch_3 Pin=H_drive_pitch-3
+Added Pin To Net: NetName=NetH_drive_pitch_3 Pin=U1-42
+Added Net: Name=NetH_drive_pitch_3
+Added Pin To Net: NetName=NetH_drive_pitch_4 Pin=H_drive_pitch-4
+Added Pin To Net: NetName=NetH_drive_pitch_4 Pin=U1-41
+Added Net: Name=NetH_drive_pitch_4
+Added Pin To Net: NetName=NetH_drive_pitch_5 Pin=H_drive_pitch-5
+Added Pin To Net: NetName=NetH_drive_pitch_5 Pin=U1-38
+Added Net: Name=NetH_drive_pitch_5
+Added Pin To Net: NetName=NetH_drive_pitch_6 Pin=H_drive_pitch-6
+Added Pin To Net: NetName=NetH_drive_pitch_6 Pin=U1-37
+Added Net: Name=NetH_drive_pitch_6
+Added Pin To Net: NetName=NetH_drive_pitch_7 Pin=H_drive_pitch-7
+Added Pin To Net: NetName=NetH_drive_pitch_7 Pin=R??-2
+Added Net: Name=NetH_drive_pitch_7
+Added Pin To Net: NetName=NetH_drive_pitch_14 Pin=H_drive_pitch-14
+Added Pin To Net: NetName=NetH_drive_pitch_14 Pin=U1-25
+Added Net: Name=NetH_drive_pitch_14
+Added Pin To Net: NetName=NetH_drive_pitch_15 Pin=H_drive_pitch-15
+Added Pin To Net: NetName=NetH_drive_pitch_15 Pin=U1-23
+Added Net: Name=NetH_drive_pitch_15
+Added Pin To Net: NetName=NetH_drive_pitch_16 Pin=H_drive_pitch-16
+Added Pin To Net: NetName=NetH_drive_pitch_16 Pin=U1-15
+Added Net: Name=NetH_drive_pitch_16
+Added Pin To Net: NetName=NetH_drive_pitch_22 Pin=H_drive_pitch-22
+Added Pin To Net: NetName=NetH_drive_pitch_22 Pin=Pitch Stepper motor-4
+Added Net: Name=NetH_drive_pitch_22
+Added Pin To Net: NetName=NetH_drive_pitch_25 Pin=H_drive_pitch-25
+Added Pin To Net: NetName=NetH_drive_pitch_25 Pin=Pitch Stepper motor-3
+Added Net: Name=NetH_drive_pitch_25
+Added Pin To Net: NetName=NetH_drive_pitch_30 Pin=H_drive_pitch-30
+Added Pin To Net: NetName=NetH_drive_pitch_30 Pin=Pitch Stepper motor-2
+Added Net: Name=NetH_drive_pitch_30
+Added Pin To Net: NetName=NetU1_11 Pin=U1-11
+Added Net: Name=NetU1_11
+Added Pin To Net: NetName=NetU1_14 Pin=U1-14
+Added Net: Name=NetU1_14
+Added Member To Class: ClassName=Sam4S Basic Board 5 Member=Component C17 100nF
+Added Member To Class: ClassName=Sam4S main control board Member=Component C50 CX1206MKX7R9BB10
+Added Member To Class: ClassName=Sam4S main control board Member=Component C?? 47uF
+Added Member To Class: ClassName=Sam4S main control board Member=Component C?? 330uF
+Added Member To Class: ClassName=Sam4S main control board Member=Component C?? 1uF
+Added Member To Class: ClassName=Sam4S main control board Member=Component C?? 1uF
+Added Member To Class: ClassName=Sam4S main control board Member=Component C?? 1uF
+Added Member To Class: ClassName=Sam4S main control board Member=Component C?? 1uF
+Added Member To Class: ClassName=Sam4S main control board Member=Component C?? 1uF
+Added Member To Class: ClassName=Sam4S main control board Member=Component C?? 100nF
+Added Member To Class: ClassName=Sam4S main control board Member=Component H_drive_brake DRV8432_DKD_36
+Added Member To Class: ClassName=Sam4S main control board Member=Component R?? 33K
+Added Member To Class: ClassName=Sam4S main control board Member=Component R?? 10R
+Added Room: Name=Sam4S Basic Board 5
+Added Room: Name=Sam4S main control board
+Added Room: Name=Sam4S Power Distribution_5

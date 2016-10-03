@@ -1,0 +1,151 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\Ryan Taylor\Desktop\wind_turbine_board\Master.PcbDoc
+Date     : 06-Sep-16
+Time     : 12:37:07 PM
+
+Processing Rule : Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5'))
+   Violation between Room Definition: Between Component U2-TLV70233DBVR (24.5mm,74.75mm) on Top Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) 
+   Violation between Room Definition: Between SMT Small Component TP16-Gnd (14.25mm,55mm) on Top Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) 
+   Violation between Room Definition: Between SMT Small Component TP_GND_-Gnd (80.25mm,67.75mm) on Top Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) 
+   Violation between Room Definition: Between SMT Small Component TP_VddOut-VddOut (27mm,53.25mm) on Top Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) 
+   Violation between Room Definition: Between SMT Small Component TP_power_3.3__-3V3 (31.5mm,75.25mm) on Top Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) 
+   Violation between Room Definition: Between SMT Small Component R16-1R (24mm,60.75mm) on Bottom Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) 
+   Violation between Room Definition: Between SMT Small Component L2-Ferrite Bead (28.75mm,60.75mm) on Bottom Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) 
+   Violation between Room Definition: Between SMT Small Component C16-4.7uF (19.5mm,60.75mm) on Bottom Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) 
+   Violation between Room Definition: Between SMT Small Component C15-100nF (31.25mm,62.75mm) on Bottom Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) 
+   Violation between Room Definition: Between SMT Small Component C14-100nF (41mm,57.5mm) on Bottom Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) 
+   Violation between Room Definition: Between SMT Small Component C13-100nF (40.75mm,52.5mm) on Bottom Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) 
+   Violation between Room Definition: Between SMT Small Component C12-100nF (36.75mm,53.25mm) on Bottom Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) 
+   Violation between Room Definition: Between SMT Small Component C11-100nF (36.75mm,55.25mm) on Bottom Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) 
+   Violation between Room Definition: Between SMT Small Component C10-100nF (30.5mm,56mm) on Top Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) 
+   Violation between Room Definition: Between SMT Small Component C9-100nF (38mm,57.25mm) on Bottom Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) 
+   Violation between Room Definition: Between SMT Small Component C8-100nF (41.25mm,55.5mm) on Bottom Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) 
+   Violation between Room Definition: Between SMT Small Component C7-100nF (34mm,46.75mm) on Top Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) 
+   Violation between Room Definition: Between SMT Small Component C6-100nF (31.5mm,58.5mm) on Top Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) 
+   Violation between Room Definition: Between SMT Small Component C5-10uF (27.5mm,74.75mm) on Top Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) 
+   Violation between Room Definition: Between SMT Small Component C4-10uF (19.75mm,75mm) on Top Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) 
+   Violation between Room Definition: Between SMT Small Component D1-SS14-E3/5AT (10.25mm,75.75mm) on Top Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) 
+   Violation between Room Definition: Between SMT Small Component D2-SS14-E3/5AT (14.75mm,75.75mm) on Top Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) 
+   Violation between Room Definition: Between SMT Small Component L1-Ferrite Bead (11mm,71.75mm) on Top Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) 
+   Violation between Room Definition: Between SMT Small Component TP_power_adiode-3V3 (36.25mm,76.25mm) on Top Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) 
+   Violation between Room Definition: Between SMT Small Component TP_power_VBUS-3V3 (24.75mm,69.75mm) on Top Layer And Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Power Distribution_5')) 
+Rule Violations :25
+
+Processing Rule : Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5'))
+   Violation between Room Definition: Between SMT Small Component Clock-12MHz (40mm,70.75mm) on Bottom Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SMT Small Component C17-100nF (77.5mm,44.75mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SMT Small Component DL3-Red (49.592mm,65.703mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between LCC Component U1-ATSAM4S8BA-ANR (38.75mm,54.975mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SMT Small Component TP11-TDI (70.25mm,63.75mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SMT Small Component TP10-TMS (66.5mm,63.75mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SMT Small Component TP9-TCK (62.75mm,63.75mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SMT Small Component TP8-TDO (59mm,63.75mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SMT Small Component TP7-nRST (55.25mm,63.75mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SMT Small Component TP_pin_11-PA11 (42mm,45.5mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SMT Small Component TP5USB_P-USB_P (14mm,61.5mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SMT Small Component TP_pin_PA15-PA15 (29.25mm,44.25mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SMT Small Component TP3USB_N-USB_N (14mm,67mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SMT Small Component TP_erase-Erase (41mm,69.25mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SMT Small Component TP_power_3.3_-3V3 (41mm,73.25mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SMT Small Component SW2-Reset (58.75mm,57mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SMT Small Component SW1-Sleep/Wake Up (20.5mm,50mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SMT Small Component R15-47K (19.75mm,70.25mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SMT Small Component R14-27K (17.25mm,70.25mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SMT Small Component R13-100K (70.25mm,59.5mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SMT Small Component R12-100K (66.5mm,59.5mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SMT Small Component R11-100K (62.75mm,59.5mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SMT Small Component R10-100K (59mm,59.5mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SMT Small Component R9-100K (55.25mm,59.5mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SMT Small Component R8-2K2 (66mm,54.5mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SMT Small Component R7-2K2 (69mm,54.75mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SMT Small Component R6-27R (39.25mm,64mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SMT Small Component R5-27R (38mm,64mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SMT Small Component R4-220R (45.634mm,68.43mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SMT Small Component R3-2K2 (26mm,49.5mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SMT Small Component R2-220R (45.039mm,72.409mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SMT Small Component R1-62R (44.116mm,75.403mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between Small Component MT4-M3.2 NPTH (80mm,5mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between Small Component MT3-M3.2 NPTH (5mm,5mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between Small Component MT2-M3.2 NPTH (80mm,75mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between Small Component MT1-M3.2 NPTH (5mm,75mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between Component H3-ARM JTAG (61.235mm,71.789mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between Component H2-I2C (76.75mm,54.25mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SIP Component H1-JS_USB_MINI_B (0.5mm,63.75mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SMT Small Component DL2-Yellow (46.167mm,65.764mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SMT Small Component DL1-Dark Green (42.763mm,65.723mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SMT Small Component C3-100nF (75.5mm,65.25mm) on Top Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SMT Small Component C2-10pF (31.25mm,66.75mm) on Bottom Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+   Violation between Room Definition: Between SMT Small Component C1-10pF (31.25mm,65.5mm) on Bottom Layer And Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Sam4S Basic Board 5')) 
+Rule Violations :44
+
+Processing Rule : Clearance Constraint (Gap=0.15mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.15mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.15mm) (Max=2mm) (Preferred=0.3mm) (All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.3mm) (Max=10mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.25mm) (Disabled)(All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=1mm) (All)
+   Violation between Net Antennae: Track (18.5mm,46mm)(20.062mm,44.438mm) on Top Layer 
+   Violation between Net Antennae: Track (29.25mm,28mm)(31.5mm,25.75mm) on Top Layer 
+   Violation between Net Antennae: Track (17.1mm,28.9mm)(18mm,28mm) on Top Layer 
+   Violation between Net Antennae: Track (29.75mm,34.25mm)(35.5mm,34.25mm) on Top Layer 
+   Violation between Net Antennae: Track (11.9mm,28.75mm)(11.9mm,30.05mm) on Top Layer 
+   Violation between Net Antennae: Track (16.3mm,28.836mm)(16.3mm,30.05mm) on Top Layer 
+   Violation between Net Antennae: Track (15.9mm,28.6mm)(15.9mm,30.05mm) on Top Layer 
+   Violation between Net Antennae: Track (48.35mm,35.1mm)(50.55mm,35.1mm) on Top Layer 
+Rule Violations :8
+
+Processing Rule : Minimum Annular Ring (Minimum=0.1mm) (All)
+Rule Violations :0
+
+Processing Rule : SMD To Corner (Distance=0.25mm) (All)
+Rule Violations :0
+
+Processing Rule : SMD To Plane Constraint (Distance=5mm) (All)
+   Violation between SMD To Plane Constraint: Pad U2-5(25.85mm,75.7mm) on Top Layer Actual Distance = 2539.975mm
+   Violation between SMD To Plane Constraint: Pad U1-18(35.5mm,49.45mm) on Top Layer Actual Distance = 2539.975mm
+   Violation between SMD To Plane Constraint: Pad U1-17(35mm,49.45mm) on Top Layer Actual Distance = 2539.975mm
+   Violation between SMD To Plane Constraint: Pad U1-7(33.225mm,55.725mm) on Top Layer Actual Distance = 2539.975mm
+   Violation between SMD To Plane Constraint: Pad U1-2(33.225mm,58.225mm) on Top Layer Actual Distance = 2539.975mm
+   Violation between SMD To Plane Constraint: Pad U1-1(33.225mm,58.725mm) on Top Layer Actual Distance = 2539.975mm
+   Violation between SMD To Plane Constraint: Pad R4-2(44.884mm,68.43mm) on Top Layer Actual Distance = 2539.975mm
+   Violation between SMD To Plane Constraint: Pad H2-1(74.365mm,48.526mm) on Top Layer Actual Distance = 2539.975mm
+   Violation between SMD To Plane Constraint: Pad H2-2(79.211mm,49.805mm) on Top Layer Actual Distance = 2539.975mm
+Rule Violations :9
+
+Processing Rule : SMD Neck-Down Constraint (Percent=50%) (Disabled)(All)
+Rule Violations :0
+
+
+Violations Detected : 86
+Time Elapsed        : 00:00:02

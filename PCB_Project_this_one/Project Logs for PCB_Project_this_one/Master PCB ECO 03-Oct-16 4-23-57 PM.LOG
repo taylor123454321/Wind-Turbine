@@ -1,0 +1,19 @@
+Removed Pin From Net: NetName=NetBuck2_3 Pin=C37-1
+Removed Pin From Net: NetName=NetBuck2_1 Pin=C37-2
+Removed Pin From Net: NetName=NetC38_1 Pin=C38-1
+Removed Pin From Net: NetName=GND Pin=C38-2
+Removed Pin From Net: NetName=NetD2_2 Pin=D1-2
+Removed Member From Class: ClassName=Sam4s Hdrives power Member=C37
+Change Component DesignItemId : Designator=C38 Old DesignItemId=CC_100nF_0402 New DesignItemId=CA_100uF_16V
+Change Component Footprint: Designator=C38 Old Footprint=CAPC1005L New Footprint=NICH-1
+Change Component Comment : Designator=C38 Old Comment=10nF New Comment=1000uF/50V
+Added Component: Designator=C38(CAPC1005L)
+Added Component: Designator=D2(DIOM4227X23N)
+Added Pin To Net: NetName=NetBuck2_3 Pin=C38-1
+Added Pin To Net: NetName=NetC38_1 Pin=C38-1
+Added Pin To Net: NetName=GND Pin=C38-2
+Added Pin To Net: NetName=NetBuck2_1 Pin=C38-2
+Added Pin To Net: NetName=NetC3_2 Pin=D1-2
+Added Pin To Net: NetName=+5V Pin=D1-1
+Added Pin To Net: NetName=NetD2_2 Pin=D1-2
+Added Member To Class: ClassName=Sam4s Hdrives power Member=Component C38 1000uF/50V
