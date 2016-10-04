@@ -1,0 +1,17 @@
+Removed Pin From Net: NetName=NetD2_2 Pin=D1-2
+Removed Pin From Net: NetName=NetC23_1 Pin=R24-1
+Removed Pin From Net: NetName=NetC41_1 Pin=R26-1
+Removed Member From Class: ClassName=Sam4s Hdrive brake Member=R24
+Removed Member From Class: ClassName=Sam4s Hdrive brake Member=R25
+Removed Member From Class: ClassName=Sam4s Hdrive pitch Member=R26
+Removed Member From Class: ClassName=Sam4s Hdrive pitch Member=R27
+Added Component: Designator=D2(DIOM4227X23N)
+Added Pin To Net: NetName=NetC23_1 Pin=C23-2
+Added Pin To Net: NetName=NetC41_1 Pin=C41-2
+Added Pin To Net: NetName=NetC3_2 Pin=D1-2
+Added Pin To Net: NetName=+5V Pin=D1-1
+Added Pin To Net: NetName=NetD2_2 Pin=D1-2
+Added Pin To Net: NetName=NetC23_1 Pin=H_d_p1-10
+Added Pin To Net: NetName=NetC23_1 Pin=H_d_p1-12
+Added Pin To Net: NetName=NetC41_1 Pin=H_d_p2-10
+Added Pin To Net: NetName=NetC41_1 Pin=H_d_p2-12

@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=GND Pin=C19-1
+Removed Pin From Net: NetName=NetBuck1_2 Pin=C19-2
+Removed Pin From Net: NetName=GND Pin=C37-1
+Removed Pin From Net: NetName=NetBuck1_2 Pin=C37-2
+Removed Pin From Net: NetName=NetD2_2 Pin=D1-2
+Removed Member From Class: ClassName=Sam4s Hdrive brake Member=C19
+Removed Member From Class: ClassName=Sam4s Hdrive pitch Member=C37
+Added Component: Designator=D2(DIOM4227X23N)
+Added Pin To Net: NetName=NetC3_2 Pin=D1-2
+Added Pin To Net: NetName=+5V Pin=D1-1
+Added Pin To Net: NetName=NetD2_2 Pin=D1-2
