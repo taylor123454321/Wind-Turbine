@@ -1,0 +1,33 @@
+Removed Pin From Net: NetName=NetBuck1_2 Pin=C48-1
+Removed Pin From Net: NetName=NetBuck1_2 Pin=C50-1
+Removed Pin From Net: NetName=NetD2_2 Pin=D1-2
+Removed Pin From Net: NetName=NetC53_1 Pin=H_d_p2-20
+Removed Pin From Net: NetName=NetC47_1 Pin=H_d_p2-35
+Added Component: Designator=D2(DIOM4227X23N)
+Added Component: Designator=R28(RESC1608L)
+Added Component: Designator=R29(RESC1608L)
+Added Component: Designator=R30(RESC1608L)
+Added Component: Designator=R31(RESC1608L)
+Added Pin To Net: NetName=NetC3_2 Pin=D1-2
+Added Pin To Net: NetName=+5V Pin=D1-1
+Added Pin To Net: NetName=NetD2_2 Pin=D1-2
+Added Pin To Net: NetName=NetBuck1_2 Pin=R28-1
+Added Pin To Net: NetName=NetC47_1 Pin=R29-2
+Added Pin To Net: NetName=NetC53_1 Pin=R30-2
+Added Pin To Net: NetName=NetBuck1_2 Pin=R31-1
+Added Pin To Net: NetName=NetC48_1 Pin=C48-1
+Added Pin To Net: NetName=NetC48_1 Pin=R28-2
+Added Net: Name=NetC48_1
+Added Pin To Net: NetName=NetC50_1 Pin=C50-1
+Added Pin To Net: NetName=NetC50_1 Pin=R31-2
+Added Net: Name=NetC50_1
+Added Pin To Net: NetName=NetH_d_p2_20 Pin=H_d_p2-20
+Added Pin To Net: NetName=NetH_d_p2_20 Pin=R30-1
+Added Net: Name=NetH_d_p2_20
+Added Pin To Net: NetName=NetH_d_p2_35 Pin=H_d_p2-35
+Added Pin To Net: NetName=NetH_d_p2_35 Pin=R29-1
+Added Net: Name=NetH_d_p2_35
+Added Member To Class: ClassName=Sam4s Hdrive pitch Member=Component R28 0R
+Added Member To Class: ClassName=Sam4s Hdrive pitch Member=Component R29 0R
+Added Member To Class: ClassName=Sam4s Hdrive pitch Member=Component R30 0R
+Added Member To Class: ClassName=Sam4s Hdrive pitch Member=Component R31 0R
