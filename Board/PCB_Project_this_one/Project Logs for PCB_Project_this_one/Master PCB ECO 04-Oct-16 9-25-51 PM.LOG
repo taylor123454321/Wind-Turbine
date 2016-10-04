@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=GND Pin=Buck3-1
+Removed Pin From Net: NetName=NetBuck2_7 Pin=Buck3-2
+Removed Pin From Net: NetName=GND Pin=Buck3-3
+Removed Pin From Net: NetName=NetBuck3_4 Pin=Buck3-4
+Removed Member From Class: ClassName=Sam4s Hdrives power Member=Buck3
+Added Component: Designator=Buck1(DC_buck_con)
+Added Pin To Net: NetName=GND Pin=Buck1-1
+Added Pin To Net: NetName=NetBuck2_7 Pin=Buck1-2
+Added Pin To Net: NetName=GND Pin=Buck1-3
+Added Pin To Net: NetName=NetBuck3_4 Pin=Buck1-4
+Change Net Name : Old Net Name=NetBuck2_7 New Net Name=NetBuck1_2
+Change Net Name : Old Net Name=NetBuck3_4 New Net Name=NetBuck1_4
+Added Member To Class: ClassName=Sam4s Hdrives power Member=Component Buck1 DC buck

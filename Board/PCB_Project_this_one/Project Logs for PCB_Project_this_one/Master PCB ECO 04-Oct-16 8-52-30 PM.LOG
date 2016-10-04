@@ -1,0 +1,6 @@
+Removed Member From Class: ClassName=Sam4S Basic Board 5 Member=D1
+Change Component Designator: OldDesignator=D1 NewDesignator=D2
+Added Component: Designator=D3(DIOM4227X23N)
+Added Pin To Net: NetName=+5V Pin=D3-1
+Added Pin To Net: NetName=NetC3_2 Pin=D3-2
+Added Member To Class: ClassName=Sam4S Basic Board 5 Member=Component D3 SS14-E3/5AT
