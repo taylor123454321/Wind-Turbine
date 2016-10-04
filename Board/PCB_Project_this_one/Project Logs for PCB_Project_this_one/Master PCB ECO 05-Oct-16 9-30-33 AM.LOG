@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=+12V Pin=Brake out-1
+Removed Pin From Net: NetName=+12V Pin=C19-2
+Change Net Name : Old Net Name=NetBuck1_2 New Net Name=+24V
+Added Pin To Net: NetName=NetBrake out_1 Pin=Brake out-1
+Added Pin To Net: NetName=NetBrake out_1 Pin=C19-2
+Added Net: Name=NetBrake out_1

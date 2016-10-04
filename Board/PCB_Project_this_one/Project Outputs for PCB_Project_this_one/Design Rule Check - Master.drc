@@ -1,77 +1,24 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\Ryan Taylor\Desktop\Wind Turbine\Board\Master.PcbDoc
-Date     : 04-Oct-16
-Time     : 9:19:19 PM
+Date     : 05-Oct-16
+Time     : 9:34:02 AM
 
-Processing Rule : SMD Neck-Down Constraint (Percent=50%) (Disabled)(All)
+Processing Rule : Room Sam4S main control board (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (Disabled)(InComponentClass('Sam4S main control board'))
 Rule Violations :0
 
-Processing Rule : SMD To Plane Constraint (Distance=5mm) (All)
-   Violation between SMD To Plane Constraint: Between Pad Buck3-2(91.257mm,100.423mm) on Top Layer And Via (115.222mm,91.29mm) from Top Layer to Bottom Layer Actual Distance = 29.494mm
-   Violation between SMD To Plane Constraint: Pad C55-1(15.071mm,61.472mm) on Top Layer Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad C57-1(20.75mm,63.371mm) on Top Layer Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad H_d_p2-21(60.833mm,31.91mm) on Top Layer And Via (56.707mm,28.734mm) from Top Layer to Bottom Layer Actual Distance = 6.722mm
-   Violation between SMD To Plane Constraint: Between Pad H_d_p2-26(64.083mm,31.91mm) on Top Layer And Via (61.385mm,26.54mm) from Top Layer to Bottom Layer Actual Distance = 6.487mm
-   Violation between SMD To Plane Constraint: Between Pad H_d_p2-29(66.033mm,31.91mm) on Top Layer And Via (68.742mm,26.655mm) from Top Layer to Bottom Layer Actual Distance = 6.542mm
-   Violation between SMD To Plane Constraint: Pad C53-3(56.161mm,23.145mm) on Top Layer Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad H_d_p1-21(17.82mm,31.622mm) on Top Layer And Via (13.463mm,28.711mm) from Top Layer to Bottom Layer Actual Distance = 6.524mm
-   Violation between SMD To Plane Constraint: Between Pad H_d_p1-26(21.07mm,31.622mm) on Top Layer And Via (17.895mm,26.557mm) from Top Layer to Bottom Layer Actual Distance = 5.595mm
-   Violation between SMD To Plane Constraint: Between Pad H_d_p1-29(23.02mm,31.622mm) on Top Layer And Via (25.438mm,26.716mm) from Top Layer to Bottom Layer Actual Distance = 5.999mm
-   Violation between SMD To Plane Constraint: Pad TP_power_adiode1-1(36.34mm,106.347mm) on Top Layer Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad R4-2(44.974mm,98.528mm) on Top Layer Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad U1-1(33.315mm,88.822mm) on Top Layer Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad U1-2(33.315mm,88.322mm) on Top Layer Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad U1-7(33.315mm,85.822mm) on Top Layer Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad U1-17(35.09mm,79.547mm) on Top Layer Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad U1-18(35.59mm,79.547mm) on Top Layer Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad U2-5(25.94mm,105.797mm) on Top Layer Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad U2-3(23.24mm,103.897mm) on Top Layer Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad U2-1(23.24mm,105.797mm) on Top Layer Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Between Pad C5-1(19.84mm,105.797mm) on Top Layer And Via (14.97mm,107.568mm) from Top Layer to Bottom Layer Actual Distance = 6.523mm
-   Violation between SMD To Plane Constraint: Between Pad C50-4(61.841mm,15.573mm) on Top Layer And Via (61.984mm,19.856mm) from Top Layer to Bottom Layer Actual Distance = 6.013mm
-   Violation between SMD To Plane Constraint: Between Pad C48-3(68.516mm,15.596mm) on Top Layer And Via (68.397mm,19.894mm) from Top Layer to Bottom Layer Actual Distance = 5.066mm
-   Violation between SMD To Plane Constraint: Pad C35-3(12.758mm,23.785mm) on Top Layer Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad C32-4(23.603mm,16.28mm) on Top Layer Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad C30-3(19.893mm,16.277mm) on Top Layer Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad C29-4(29.932mm,23.575mm) on Top Layer Actual Distance = 2539.975mm
-   Violation between SMD To Plane Constraint: Pad C47-4(73.816mm,23.211mm) on Top Layer Actual Distance = 2539.975mm
-Rule Violations :28
-
-Processing Rule : SMD To Corner (Distance=0.25mm) (All)
+Processing Rule : Room Sam4s Hdrives power (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (Disabled)(InComponentClass('Sam4s Hdrives power'))
 Rule Violations :0
 
-Processing Rule : Minimum Annular Ring (Minimum=0.1mm) (All)
+Processing Rule : Room Sam4s Hdrive pitch (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (Disabled)(InComponentClass('Sam4s Hdrive pitch'))
 Rule Violations :0
 
-Processing Rule : Net Antennae (Tolerance=1mm) (All)
+Processing Rule : Room Sam4s Hdrive brake (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (Disabled)(InComponentClass('Sam4s Hdrive brake'))
 Rule Violations :0
 
-Processing Rule : Silk to Silk (Clearance=0.254mm) (All),(All)
-   Violation between Silk To Silk Clearance Constraint: (0.055mm < 0.254mm) Between Text "- Output power +" (112.407mm,55.723mm) on Top Overlay And Track (87.807mm,56.923mm)(112.757mm,56.923mm) on Top Overlay Silk Text to Silk Clearance [0.055mm]
-Rule Violations :1
-
-Processing Rule : Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)
+Processing Rule : Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (Disabled)(InComponentClass('Sam4S Power Distribution_5'))
 Rule Violations :0
 
-Processing Rule : Minimum Solder Mask Sliver (Gap=0.25mm) (Disabled)(All),(All)
-Rule Violations :0
-
-Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
-Rule Violations :0
-
-Processing Rule : Hole Size Constraint (Min=0.3mm) (Max=10mm) (All)
-Rule Violations :0
-
-Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
-Rule Violations :0
-
-Processing Rule : Un-Routed Net Constraint ( (All) )
-Rule Violations :0
-
-Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
-Rule Violations :0
-
-Processing Rule : Width Constraint (Min=0.15mm) (Max=2mm) (Preferred=0.3mm) (All)
+Processing Rule : Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (Disabled)(InComponentClass('Sam4S Basic Board 5'))
 Rule Violations :0
 
 Processing Rule : Clearance Constraint (Gap=0.15mm) (All),(All)
@@ -83,24 +30,80 @@ Rule Violations :0
 Processing Rule : Clearance Constraint (Gap=0.15mm) (All),(All)
 Rule Violations :0
 
-Processing Rule : Room Sam4S Basic Board 5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (Disabled)(InComponentClass('Sam4S Basic Board 5'))
+Processing Rule : Width Constraint (Min=0.15mm) (Max=2mm) (Preferred=0.3mm) (All)
 Rule Violations :0
 
-Processing Rule : Room Sam4S Power Distribution_5 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (Disabled)(InComponentClass('Sam4S Power Distribution_5'))
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
 
-Processing Rule : Room Sam4s Hdrive brake (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (Disabled)(InComponentClass('Sam4s Hdrive brake'))
+Processing Rule : Un-Routed Net Constraint ( (All) )
 Rule Violations :0
 
-Processing Rule : Room Sam4s Hdrive pitch (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (Disabled)(InComponentClass('Sam4s Hdrive pitch'))
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
 Rule Violations :0
 
-Processing Rule : Room Sam4s Hdrives power (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (Disabled)(InComponentClass('Sam4s Hdrives power'))
+Processing Rule : Hole Size Constraint (Min=0.3mm) (Max=10mm) (All)
 Rule Violations :0
 
-Processing Rule : Room Sam4S main control board (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (Disabled)(InComponentClass('Sam4S main control board'))
+Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.25mm) (Disabled)(All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)
+   Violation between Silk To Solder Mask Clearance Constraint: (0.2mm < 0.254mm) Between Track (116.161mm,33.397mm)(117.098mm,33.397mm) on Top Overlay And Pad C19-1(118.323mm,32.422mm) on Top Layer [Top Overlay] to [Top Solder] clearance [0.2mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.2mm < 0.254mm) Between Track (119.548mm,33.397mm)(120.486mm,33.397mm) on Top Overlay And Pad C19-1(118.323mm,32.422mm) on Top Layer [Top Overlay] to [Top Solder] clearance [0.2mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.2mm < 0.254mm) Between Track (114.923mm,26.597mm)(117.098mm,26.597mm) on Top Overlay And Pad C19-2(118.323mm,27.572mm) on Top Layer [Top Overlay] to [Top Solder] clearance [0.2mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.2mm < 0.254mm) Between Track (119.548mm,26.597mm)(121.723mm,26.597mm) on Top Overlay And Pad C19-2(118.323mm,27.572mm) on Top Layer [Top Overlay] to [Top Solder] clearance [0.2mm]
+Rule Violations :4
+
+Processing Rule : Silk to Silk (Clearance=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=1mm) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=0.1mm) (All)
+Rule Violations :0
+
+Processing Rule : SMD To Corner (Distance=0.25mm) (All)
+Rule Violations :0
+
+Processing Rule : SMD To Plane Constraint (Distance=5mm) (All)
+   Violation between SMD To Plane Constraint: Pad C47-4(73.816mm,23.211mm) on Top Layer Actual Distance = 2539.975mm
+   Violation between SMD To Plane Constraint: Pad C29-4(29.932mm,23.575mm) on Top Layer Actual Distance = 2539.975mm
+   Violation between SMD To Plane Constraint: Pad C30-3(19.893mm,16.277mm) on Top Layer Actual Distance = 2539.975mm
+   Violation between SMD To Plane Constraint: Pad C32-4(23.603mm,16.28mm) on Top Layer Actual Distance = 2539.975mm
+   Violation between SMD To Plane Constraint: Pad C35-3(12.758mm,23.785mm) on Top Layer Actual Distance = 2539.975mm
+   Violation between SMD To Plane Constraint: Between Pad C48-3(68.516mm,15.596mm) on Top Layer And Via (68.397mm,19.894mm) from Top Layer to Bottom Layer Actual Distance = 5.066mm
+   Violation between SMD To Plane Constraint: Between Pad C50-4(61.841mm,15.573mm) on Top Layer And Via (61.984mm,19.856mm) from Top Layer to Bottom Layer Actual Distance = 6.013mm
+   Violation between SMD To Plane Constraint: Between Pad C5-1(19.84mm,105.797mm) on Top Layer And Via (14.97mm,107.568mm) from Top Layer to Bottom Layer Actual Distance = 6.523mm
+   Violation between SMD To Plane Constraint: Pad U2-1(23.24mm,105.797mm) on Top Layer Actual Distance = 2539.975mm
+   Violation between SMD To Plane Constraint: Pad U2-3(23.24mm,103.897mm) on Top Layer Actual Distance = 2539.975mm
+   Violation between SMD To Plane Constraint: Pad U2-5(25.94mm,105.797mm) on Top Layer Actual Distance = 2539.975mm
+   Violation between SMD To Plane Constraint: Pad U1-18(35.59mm,79.547mm) on Top Layer Actual Distance = 2539.975mm
+   Violation between SMD To Plane Constraint: Pad U1-17(35.09mm,79.547mm) on Top Layer Actual Distance = 2539.975mm
+   Violation between SMD To Plane Constraint: Pad U1-7(33.315mm,85.822mm) on Top Layer Actual Distance = 2539.975mm
+   Violation between SMD To Plane Constraint: Pad U1-2(33.315mm,88.322mm) on Top Layer Actual Distance = 2539.975mm
+   Violation between SMD To Plane Constraint: Pad U1-1(33.315mm,88.822mm) on Top Layer Actual Distance = 2539.975mm
+   Violation between SMD To Plane Constraint: Pad R4-2(44.974mm,98.528mm) on Top Layer Actual Distance = 2539.975mm
+   Violation between SMD To Plane Constraint: Pad TP_power_adiode1-1(36.34mm,106.347mm) on Top Layer Actual Distance = 2539.975mm
+   Violation between SMD To Plane Constraint: Between Pad H_d_p1-26(21.07mm,31.622mm) on Top Layer And Via (17.895mm,26.557mm) from Top Layer to Bottom Layer Actual Distance = 6.855mm
+   Violation between SMD To Plane Constraint: Between Pad H_d_p1-21(17.82mm,31.622mm) on Top Layer And Via (13.463mm,28.711mm) from Top Layer to Bottom Layer Actual Distance = 6.524mm
+   Violation between SMD To Plane Constraint: Pad C53-3(56.161mm,23.145mm) on Top Layer Actual Distance = 2539.975mm
+   Violation between SMD To Plane Constraint: Between Pad H_d_p2-34(69.283mm,31.91mm) on Top Layer And Via (73.162mm,28.695mm) from Top Layer to Bottom Layer Actual Distance = 6.565mm
+   Violation between SMD To Plane Constraint: Between Pad H_d_p2-29(66.033mm,31.91mm) on Top Layer And Via (68.742mm,26.655mm) from Top Layer to Bottom Layer Actual Distance = 5.054mm
+   Violation between SMD To Plane Constraint: Between Pad H_d_p2-26(64.083mm,31.91mm) on Top Layer And Via (61.385mm,26.54mm) from Top Layer to Bottom Layer Actual Distance = 6.487mm
+   Violation between SMD To Plane Constraint: Between Pad H_d_p2-21(60.833mm,31.91mm) on Top Layer And Via (56.707mm,28.734mm) from Top Layer to Bottom Layer Actual Distance = 6.722mm
+   Violation between SMD To Plane Constraint: Pad C57-1(20.75mm,63.371mm) on Top Layer Actual Distance = 2539.975mm
+   Violation between SMD To Plane Constraint: Pad C55-1(15.071mm,61.472mm) on Top Layer Actual Distance = 2539.975mm
+   Violation between SMD To Plane Constraint: Between Pad Buck1-2(91.306mm,100.608mm) on Top Layer And Via (115.222mm,91.29mm) from Top Layer to Bottom Layer Actual Distance = 29.494mm
+Rule Violations :28
+
+Processing Rule : SMD Neck-Down Constraint (Percent=50%) (Disabled)(All)
 Rule Violations :0
 
 
-Violations Detected : 29
+Violations Detected : 32
 Time Elapsed        : 00:00:04

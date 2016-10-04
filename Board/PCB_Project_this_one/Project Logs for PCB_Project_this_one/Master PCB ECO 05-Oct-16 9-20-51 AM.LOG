@@ -1,0 +1,25 @@
+Added Component: Designator=Brake out(HDR1X4)
+Added Component: Designator=C19(CAPAE6666X77M)
+Added Component: Designator=Q1(SOT23_L)
+Added Component: Designator=Q2(SOT23_N)
+Added Pin To Net: NetName=GND Pin=Brake out-4
+Added Pin To Net: NetName=GND Pin=C19-1
+Added Pin To Net: NetName=NetBuck1_4 Pin=Q1-2
+Added Pin To Net: NetName=NetBuck1_4 Pin=Q2-2
+Change Net Name : Old Net Name=NetBuck1_4 New Net Name=+12V
+Added Pin To Net: NetName=NetBrake out_1 Pin=Brake out-1
+Added Pin To Net: NetName=NetBrake out_1 Pin=C19-2
+Added Pin To Net: NetName=NetBrake out_1 Pin=Q2-3
+Added Net: Name=NetBrake out_1
+Added Pin To Net: NetName=NetQ1_1 Pin=Q1-1
+Added Pin To Net: NetName=NetQ1_1 Pin=U1-41
+Added Net: Name=NetQ1_1
+Added Pin To Net: NetName=NetQ1_3 Pin=Q1-3
+Added Pin To Net: NetName=NetQ1_3 Pin=Q2-1
+Added Net: Name=NetQ1_3
+Added Pin To Net: NetName=NetU1_42 Pin=U1-42
+Added Net: Name=NetU1_42
+Added Member To Class: ClassName=Sam4S main control board Member=Component Brake out Header 4
+Added Member To Class: ClassName=Sam4S main control board Member=Component C19 100µF/25V
+Added Member To Class: ClassName=Sam4S main control board Member=Component Q1 ZXM61N02FTA
+Added Member To Class: ClassName=Sam4S main control board Member=Component Q2 si2318cd
