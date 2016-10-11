@@ -1,0 +1,24 @@
+Removed Pin From Net: NetName=NetL5_1 Pin=L5-1
+Removed Member From Class: ClassName=Sam4S Buck board Member=L1
+Removed Member From Class: ClassName=Sam4S Buck board Member=L2
+Change Component Designator: OldDesignator=L1 NewDesignator=L3
+Change Component Designator: OldDesignator=L2 NewDesignator=L4
+Change Component Designator: OldDesignator=L3 NewDesignator=L5
+Change Component Designator: OldDesignator=L5 NewDesignator=L7
+Change Component Designator: OldDesignator=L7 NewDesignator=L9
+Change Component Designator: OldDesignator=L8 NewDesignator=L10
+Added Component: Designator=L8(Inductor)
+Added Pin To Net: NetName=NetL5_1 Pin=L5-1
+Added Pin To Net: NetName=NetC19_2 Pin=L6-1
+Change Net Name : Old Net Name=NetL1_1 New Net Name=NetL3_1
+Change Net Name : Old Net Name=NetL2_1 New Net Name=NetL4_1
+Change Net Name : Old Net Name=NetL7_1 New Net Name=NetL9_1
+Added Pin To Net: NetName=NetL7_1 Pin=L7-1
+Added Pin To Net: NetName=NetL7_1 Pin=L6-0
+Added Net: Name=NetL7_1
+Added Pin To Net: NetName=NetL8_1 Pin=L6-1
+Added Pin To Net: NetName=NetL8_1 Pin=L9-0
+Added Net: Name=NetL8_1
+Added Member To Class: ClassName=Sam4S Buck board Member=Component L4 inductor
+Added Member To Class: ClassName=Sam4S Buck board Member=Component L9 inductor
+Added Member To Class: ClassName=Sam4S Buck board Member=Component L10 inductor

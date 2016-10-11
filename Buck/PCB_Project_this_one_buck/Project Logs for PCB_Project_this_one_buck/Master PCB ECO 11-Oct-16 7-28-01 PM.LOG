@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=NetL7_1 Pin=L6-0
+Removed Pin From Net: NetName=NetL8_1 Pin=L6-1
+Added Pin To Net: NetName=NetL5_1 Pin=L6-0
+Added Pin To Net: NetName=NetC19_2 Pin=L6-1
+Added Pin To Net: NetName=NetL7_1 Pin=L8-0
+Added Pin To Net: NetName=NetL8_1 Pin=L8-1
+Added Member To Class: ClassName=Sam4S Buck board Member=Component L8 inductor

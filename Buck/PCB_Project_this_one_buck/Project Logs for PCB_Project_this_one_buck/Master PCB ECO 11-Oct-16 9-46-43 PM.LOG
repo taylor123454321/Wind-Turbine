@@ -1,0 +1,4 @@
+Change Net Name : Old Net Name=NETLABEL2 New Net Name=POWERIN-
+Change Net Name : Old Net Name=NETLABEL3 New Net Name=POWERIN+
+Change Net Name : Old Net Name=OFFSHEET+ New Net Name=POWEROUT+
+Change Net Name : Old Net Name=OFFSHEET- New Net Name=POWEROUT-

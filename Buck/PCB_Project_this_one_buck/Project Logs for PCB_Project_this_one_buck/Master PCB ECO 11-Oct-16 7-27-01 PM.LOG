@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=NetL7_1 Pin=L6-0
+Removed Pin From Net: NetName=NetL8_1 Pin=L6-1
+Removed Member From Class: ClassName=Sam4S Power Distribution_5 Member=L3
+Removed Member From Class: ClassName=Sam4S Power Distribution_5 Member=L4
+Added Component: Designator=L8(Inductor)
+Added Pin To Net: NetName=NetL5_1 Pin=L6-0
+Added Pin To Net: NetName=NetC19_2 Pin=L6-1
+Added Pin To Net: NetName=NetL7_1 Pin=L6-0
+Added Pin To Net: NetName=NetL8_1 Pin=L6-1
+Added Member To Class: ClassName=Sam4S Power Distribution_5 Member=Component L1 Ferrite Bead
+Added Member To Class: ClassName=Sam4S Power Distribution_5 Member=Component L2 Ferrite Bead
+Added Member To Class: ClassName=Sam4S Buck board Member=Component L3 inductor
+Added Member To Class: ClassName=Sam4S Buck board Member=Component L8 inductor

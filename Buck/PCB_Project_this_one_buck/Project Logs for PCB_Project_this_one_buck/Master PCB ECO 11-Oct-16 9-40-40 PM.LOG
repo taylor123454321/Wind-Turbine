@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=NetC18_2 Pin=Input power-1
+Removed Pin From Net: NetName=GND Pin=Input power-2
+Removed Pin From Net: NetName=NetC19_2 Pin=Output power-1
+Removed Pin From Net: NetName=NetC19_1 Pin=Output power-2
+Removed Member From Class: ClassName=Sam4S Buck board Member=Input power
+Removed Member From Class: ClassName=Sam4S Buck board Member=Output power
+Change Net Name : Old Net Name=GND New Net Name=NETLABEL2
+Change Net Name : Old Net Name=NetC18_2 New Net Name=NETLABEL3
+Change Net Name : Old Net Name=NetC19_1 New Net Name=OFFSHEET-
+Change Net Name : Old Net Name=NetC19_2 New Net Name=OFFSHEET+

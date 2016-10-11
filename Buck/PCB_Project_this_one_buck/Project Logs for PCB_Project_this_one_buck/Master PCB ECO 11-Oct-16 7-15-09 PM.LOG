@@ -1,0 +1,38 @@
+Removed Pin From Net: NetName=NetC18_2 Pin=L4-1
+Removed Pin From Net: NetName=NetC19_2 Pin=L4-3
+Added Component: Designator=L1(Inductor)
+Added Component: Designator=L2(Inductor)
+Added Component: Designator=L3(Inductor)
+Added Component: Designator=L5(Inductor)
+Added Component: Designator=L6(Inductor)
+Added Component: Designator=L7(Inductor)
+Added Component: Designator=L8(Inductor)
+Added Pin To Net: NetName=NetC18_2 Pin=L1-0
+Added Pin To Net: NetName=NetC19_2 Pin=L4-1
+Added Pin To Net: NetName=NetC18_2 Pin=L5-0
+Added Pin To Net: NetName=NetC19_2 Pin=L8-1
+Added Pin To Net: NetName=NetL1_1 Pin=L1-1
+Added Pin To Net: NetName=NetL1_1 Pin=L2-0
+Added Net: Name=NetL1_1
+Added Pin To Net: NetName=NetL2_1 Pin=L2-1
+Added Pin To Net: NetName=NetL2_1 Pin=L3-0
+Added Net: Name=NetL2_1
+Added Pin To Net: NetName=NetL3_1 Pin=L3-1
+Added Pin To Net: NetName=NetL3_1 Pin=L4-0
+Added Net: Name=NetL3_1
+Added Pin To Net: NetName=NetL5_1 Pin=L5-1
+Added Pin To Net: NetName=NetL5_1 Pin=L6-0
+Added Net: Name=NetL5_1
+Added Pin To Net: NetName=NetL6_1 Pin=L6-1
+Added Pin To Net: NetName=NetL6_1 Pin=L7-0
+Added Net: Name=NetL6_1
+Added Pin To Net: NetName=NetL7_1 Pin=L7-1
+Added Pin To Net: NetName=NetL7_1 Pin=L8-0
+Added Net: Name=NetL7_1
+Added Member To Class: ClassName=Sam4S Buck board Member=Component L1 inductor
+Added Member To Class: ClassName=Sam4S Buck board Member=Component L2 inductor
+Added Member To Class: ClassName=Sam4S Buck board Member=Component L3 inductor
+Added Member To Class: ClassName=Sam4S Buck board Member=Component L5 inductor
+Added Member To Class: ClassName=Sam4S Buck board Member=Component L6 inductor
+Added Member To Class: ClassName=Sam4S Buck board Member=Component L7 inductor
+Added Member To Class: ClassName=Sam4S Buck board Member=Component L8 inductor
